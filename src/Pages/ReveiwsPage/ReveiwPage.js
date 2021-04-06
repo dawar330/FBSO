@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./style.css";
 
 export default ReviewPage;
@@ -42,25 +41,25 @@ function ReviewPage(props) {
     reveiw2Props,
     reveiw2Props2,
     howToVideosProps,
-  } = ReviewsData;
+  } = ReviewsPageData;
 
   return (
-    <div className="reviewspage">
+    <div className="reviews-page">
       <div className="overlap-group">
-        <img alt="" className="x1-1" src={x11} />
-        <img alt="" className="vector-15" src={vector15} />
+        <img className="x1-1" src={x11} />
+        <img className="vector-15" src={vector15} />
         <ReviewHeader {...reviewHeaderProps} />
       </div>
-      <div className="flex-row-4">
+      <div className="flex-row-6">
         <div className="review-container">
           <Reveiw {...reveiwProps} />
-          <div className="overlap-group6-1">
+          <div className="overlap-group6">
             <Reveiw2 {...reveiw2Props} />
-            <img alt="" className="rectangle-63" src={rectangle63} />
+            <img className="rectangle-63" src={rectangle63} />
           </div>
           <div className="overlap-group7">
             <Reveiw3 {...reveiw2Props2} />
-            <img alt="" className="rectangle-62-1" src={rectangle62} />
+            <img className="rectangle-62-1" src={rectangle62} />
           </div>
         </div>
         <div className="side-bar">
@@ -68,21 +67,21 @@ function ReviewPage(props) {
             <div className="what-customer-like valign-text-middle">
               {whatCustomerLike}
             </div>
-            <div className="overlap-group1-1 border-1px-silver">
+            <div className="overlap-group1-2 border-1px-silver">
               <div className="number-1 valign-text-middle mulish-bold-black-25px">
                 {number}
               </div>
-              <img alt="" className="vector-2" src={vector20} />
-              <div className="fast-listing valign-text-middle mulish-normal-black-25px">
+              <img className="vector-2" src={vector20} />
+              <div className="fast-listing valign-text-middle mulish-regular-normal-black-25px">
                 {fastListing}
               </div>
               <div className="address-3 valign-text-middle mulish-bold-gunsmoke-15px">
                 {address}
               </div>
             </div>
-            <div className="overlap-group3">
+            <div className="overlap-group3-1">
               <div className="rectangle-24 border-1px-silver"></div>
-              <img alt="" className="vector-21" src={vector21} />
+              <img className="vector-21" src={vector21} />
               <div className="number valign-text-middle mulish-bold-black-25px">
                 {number2}
               </div>
@@ -95,20 +94,20 @@ function ReviewPage(props) {
               <div className="number-1 valign-text-middle mulish-bold-black-25px">
                 {number3}
               </div>
-              <img alt="" className="vector-2" src={vector22} />
-              <div className="fast-listing valign-text-middle mulish-normal-black-25px">
+              <img className="vector-2" src={vector22} />
+              <div className="fast-listing valign-text-middle mulish-regular-normal-black-25px">
                 {fastListing2}
               </div>
               <div className="address-3 valign-text-middle mulish-bold-gunsmoke-15px">
                 {address3}
               </div>
             </div>
-            <div className="overlap-group2 border-1px-silver">
+            <div className="overlap-group2-2 border-1px-silver">
               <div className="number-1 valign-text-middle mulish-bold-black-25px">
                 {number4}
               </div>
-              <img alt="" className="vector-2" src={vector23} />
-              <div className="fast-listing valign-text-middle mulish-normal-black-25px">
+              <img className="vector-2" src={vector23} />
+              <div className="fast-listing valign-text-middle mulish-regular-normal-black-25px">
                 {fastListing3}
               </div>
               <div className="address-3 valign-text-middle mulish-bold-gunsmoke-15px">
@@ -119,8 +118,8 @@ function ReviewPage(props) {
               <div className="number-1 valign-text-middle mulish-bold-black-25px">
                 {number5}
               </div>
-              <img alt="" className="vector-2" src={vector24} />
-              <div className="fast-listing valign-text-middle mulish-normal-black-25px">
+              <img className="vector-2" src={vector24} />
+              <div className="fast-listing valign-text-middle mulish-regular-normal-black-25px">
                 {fastListing4}
               </div>
               <div className="address-3 valign-text-middle mulish-bold-gunsmoke-15px">
@@ -129,16 +128,16 @@ function ReviewPage(props) {
             </div>
           </div>
           <div className="business-transparency">
-            <div className="overlap-group6 border-class-1">
+            <div className="overlap-group6-1 border-1px-iron">
               <div className="text-13 valign-text-middle mulish-bold-black-25px">
                 {text13}
               </div>
-              <img alt="" className="vector-25" src={vector25} />
-              <div className="flex-row-5">
-                <img alt="" className="rectangle-29" src={rectangle29} />
+              <img className="vector-25" src={vector25} />
+              <div className="flex-row-8">
+                <img className="rectangle-29" src={rectangle29} />
                 <div className="text-14 valign-text-middle">{text14}</div>
               </div>
-              <img alt="" className="vector-26" src={vector26} />
+              <img className="vector-26" src={vector26} />
               <div className="text-15 valign-text-middle">{text15}</div>
             </div>
           </div>
@@ -174,23 +173,23 @@ function ReviewHeader(props) {
     <div className="review-header">
       <h1 className="text-1 valign-text-middle">{text1}</h1>
       <div className="text-2 valign-text-middle">{text2}</div>
-      <div className="flex-row-8">
+      <div className="flex-row-7">
         <div className="overlap-group2-1">
-          <img alt="" className="star-" src={star1} />
+          <img className="star-" src={star1} />
         </div>
-        <div className="overlap-group3-1">
-          <img alt="" className="star-" src={star2} />
+        <div className="overlap-group3">
+          <img className="star-" src={star2} />
         </div>
         <div className="overlap-group5">
-          <img alt="" className="star-" src={star3} />
+          <img className="star-" src={star3} />
         </div>
         <div className="overlap-group4-1">
-          <img alt="" className="star-" src={star4} />
+          <img className="star-" src={star4} />
         </div>
         <div className="overlap-group1">
-          <img alt="" className="star-5" src={star5} />
+          <img className="star-5" src={star5} />
         </div>
-        <img alt="" className="vector-17" src={vector17} />
+        <img className="vector-17" src={vector17} />
         <div className="address valign-text-middle">{address}</div>
       </div>
     </div>
@@ -200,8 +199,6 @@ function ReviewHeader(props) {
 function Reveiw(props) {
   const {
     rectangle62,
-    afaqAhmed,
-    homeSeller,
     rectangle22,
     address,
     address2,
@@ -216,71 +213,88 @@ function Reveiw(props) {
     spanText,
     spanText2,
     spanText3,
+    frame6Props,
   } = props;
 
   return (
-    <div className="reveiw border-1px-boulder">
-      <div className="flex-col">
-        <div className="flex-row-7">
-          <img alt="" className="rectangle-62" src={rectangle62} />
-          <div className="frame-6">
-            <div className="afaq-ahmed valign-text-middle roboto-bold-black-14px">
-              {afaqAhmed}
-            </div>
-            <div className="home-seller valign-text-middle mulish-normal-granite-gray-12px">
-              {homeSeller}
+    <div className="reveiw">
+      <div className="overlap-group1-1 border-1px-boulder">
+        <div className="flex-col">
+          <div className="flex-row-4">
+            <img className="rectangle-62" src={rectangle62} />
+            <Frame6
+              afaqAhmed={frame6Props.afaqAhmed}
+              homeSeller={frame6Props.homeSeller}
+            />
+            <img className="rectangle-22" src={rectangle22} />
+            <div className="overlap-group2">
+              <div className="address-1 valign-text-middle mulish-regular-normal-black-12px">
+                {address}
+              </div>
+              <div className="address-2 valign-text-middle mulish-regular-normal-black-12px">
+                {address2}
+              </div>
+              <p className="text- valign-text-middle mulish-regular-normal-granite-gray-10px">
+                {text3}
+              </p>
             </div>
           </div>
-          <img alt="" className="rectangle-22" src={rectangle22} />
+          <img className="vector-19" src={vector19} />
+        </div>
+        <div className="flex-row-1">
           <div className="overlap-group-1">
-            <div className="address-1 valign-text-middle mulish-normal-black-12px">
-              {address}
-            </div>
-            <div className="address-2 valign-text-middle mulish-normal-black-12px">
-              {address2}
-            </div>
-            <p className="text- valign-text-middle mulish-normal-granite-gray-10px">
-              {text3}
-            </p>
+            <div className="rectangle-17"></div>
+            <img className="star-6" src={star6} />
           </div>
+          <div className="overlap-group-2">
+            <div className="rectangle-18"></div>
+            <img className="star--1" src={star7} />
+          </div>
+          <div className="overlap-group-3">
+            <div className="rectangle-"></div>
+            <img className="star--2" src={star8} />
+          </div>
+          <div className="overlap-group-3">
+            <div className="rectangle-"></div>
+            <img className="star--1" src={star9} />
+          </div>
+          <div className="overlap-group-3">
+            <div className="rectangle-"></div>
+            <img className="star--2" src={star10} />
+          </div>
+          <p className="text--1 valign-text-middle mulish-regular-normal-boulder-10px">
+            {text5}
+          </p>
         </div>
-        <img alt="" className="vector-19" src={vector19} />
+        <div className="text-4 valign-text-middle roboto-bold-white-20px">
+          <span>
+            <span className="span">{spanText}</span>
+            <span className="span-1">{spanText2}</span>
+            <span className="span2">{spanText3}</span>
+          </span>
+        </div>
       </div>
-      <div className="flex-row-1">
-        <div className="overlap-group-2">
-          <img alt="" className="star-6" src={star6} />
-        </div>
-        <div className="overlap-group-3">
-          <img alt="" className="star--1" src={star7} />
-        </div>
-        <div className="overlap-group-4">
-          <img alt="" className="star--1" src={star8} />
-        </div>
-        <div className="overlap-group-5">
-          <img alt="" className="star--1" src={star9} />
-        </div>
-        <div className="overlap-group-4">
-          <img alt="" className="star--1" src={star10} />
-        </div>
-        <p className="text--1 valign-text-middle mulish-normal-boulder-10px">
-          {text5}
-        </p>
+    </div>
+  );
+}
+
+function Frame6(props) {
+  const { afaqAhmed, homeSeller } = props;
+
+  return (
+    <div className="frame-6">
+      <div className="afaq-ahmed valign-text-middle roboto-bold-black-14px">
+        {afaqAhmed}
       </div>
-      <p className="text-4 valign-text-middle roboto-bold-white-14px">
-        <span>
-          <span className="span">{spanText}</span>
-          <span className="span-1">{spanText2}</span>
-          <span className="span2">{spanText3}</span>
-        </span>
-      </p>
+      <div className="home-seller valign-text-middle mulish-regular-normal-granite-gray-12px">
+        {homeSeller}
+      </div>
     </div>
   );
 }
 
 function Reveiw2(props) {
   const {
-    afaqAhmedI169549,
-    text6,
     rectangle22,
     address,
     address2,
@@ -294,69 +308,88 @@ function Reveiw2(props) {
     text8,
     spanText,
     spanText2,
+    spanText3,
+    frame62Props,
   } = props;
 
   return (
-    <div className="reveiw-1 border-1px-boulder">
-      <div className="flex-col-1">
-        <div className="flex-row-2">
-          <div className="frame-6-2">
-            <div className="afaq-ahmed-i169549 valign-text-middle roboto-bold-black-14px">
-              {afaqAhmedI169549}
-            </div>
-            <div className="text-6 valign-text-middle mulish-normal-granite-gray-12px">
-              {text6}
+    <div className="reveiw-1">
+      <div className="overlap-group1-1 border-1px-boulder">
+        <div className="flex-col-1">
+          <div className="flex-row-2">
+            <Frame62
+              afaqAhmedI169549={frame62Props.afaqAhmedI169549}
+              text6={frame62Props.text6}
+            />
+            <img className="rectangle-22-1" src={rectangle22} />
+            <div className="overlap-group-4">
+              <div className="address-1 valign-text-middle mulish-regular-normal-black-12px">
+                {address}
+              </div>
+              <div className="address-2 valign-text-middle mulish-regular-normal-black-12px">
+                {address2}
+              </div>
+              <p className="text- valign-text-middle mulish-regular-normal-granite-gray-10px">
+                {text7}
+              </p>
             </div>
           </div>
-          <img alt="" className="rectangle-22-1" src={rectangle22} />
+          <img className="vector-19-1" src={vector19} />
+        </div>
+        <div className="flex-row-1">
           <div className="overlap-group-1">
-            <div className="address-1 valign-text-middle mulish-normal-black-12px">
-              {address}
-            </div>
-            <div className="address-2 valign-text-middle mulish-normal-black-12px">
-              {address2}
-            </div>
-            <p className="text- valign-text-middle mulish-normal-granite-gray-10px">
-              {text7}
-            </p>
+            <div className="rectangle-17"></div>
+            <img className="star-6" src={star6} />
           </div>
+          <div className="overlap-group-2">
+            <div className="rectangle-18"></div>
+            <img className="star--1" src={star7} />
+          </div>
+          <div className="overlap-group-3">
+            <div className="rectangle-"></div>
+            <img className="star--2" src={star8} />
+          </div>
+          <div className="overlap-group-3">
+            <div className="rectangle-"></div>
+            <img className="star--1" src={star9} />
+          </div>
+          <div className="overlap-group-3">
+            <div className="rectangle-"></div>
+            <img className="star--2" src={star10} />
+          </div>
+          <p className="text--1 valign-text-middle mulish-regular-normal-boulder-10px">
+            {text8}
+          </p>
         </div>
-        <img alt="" className="vector-19-1" src={vector19} />
+        <div className="fsbopk-was-very-sim valign-text-middle roboto-bold-white-20px">
+          <span>
+            <span className="span">{spanText}</span>
+            <span className="span-1">{spanText2}</span>
+            <span className="span2">{spanText3}</span>
+          </span>
+        </div>
       </div>
-      <div className="flex-row-1">
-        <div className="overlap-group-2">
-          <img alt="" className="star-6" src={star6} />
-        </div>
-        <div className="overlap-group-3">
-          <img alt="" className="star--1" src={star7} />
-        </div>
-        <div className="overlap-group-4">
-          <img alt="" className="star--1" src={star8} />
-        </div>
-        <div className="overlap-group-5">
-          <img alt="" className="star--1" src={star9} />
-        </div>
-        <div className="overlap-group-4">
-          <img alt="" className="star--1" src={star10} />
-        </div>
-        <p className="text--1 valign-text-middle mulish-normal-boulder-10px">
-          {text8}
-        </p>
+    </div>
+  );
+}
+
+function Frame62(props) {
+  const { afaqAhmedI169549, text6 } = props;
+
+  return (
+    <div className="frame-6-2">
+      <div className="afaq-ahmed-i169549 valign-text-middle roboto-bold-black-14px">
+        {afaqAhmedI169549}
       </div>
-      <p className="fsbopk-was-very-sim valign-text-middle roboto-bold-white-14px">
-        <span>
-          <span className="span">{spanText}</span>
-          <span className="span-1">{spanText2}</span>
-        </span>
-      </p>
+      <div className="text-6 valign-text-middle mulish-regular-normal-granite-gray-12px">
+        {text6}
+      </div>
     </div>
   );
 }
 
 function Reveiw3(props) {
   const {
-    afaqAhmedI169573,
-    text9,
     rectangle22,
     address,
     address2,
@@ -372,63 +405,84 @@ function Reveiw3(props) {
     spanText2,
     spanText3,
     spanText4,
+    spanText5,
+    frame63Props,
   } = props;
 
   return (
-    <div className="reveiw-1 border-1px-boulder">
-      <div className="flex-col-1">
-        <div className="flex-row-2">
-          <div className="frame-6-1">
-            <div className="afaq-ahmed-i169573 valign-text-middle roboto-bold-black-14px">
-              {afaqAhmedI169573}
-            </div>
-            <div className="text-9 valign-text-middle mulish-normal-granite-gray-12px">
-              {text9}
+    <div className="reveiw-1">
+      <div className="overlap-group1-1 border-1px-boulder">
+        <div className="flex-col-1">
+          <div className="flex-row-2">
+            <Frame63
+              afaqAhmedI169573={frame63Props.afaqAhmedI169573}
+              text9={frame63Props.text9}
+            />
+            <img className="rectangle-22-2" src={rectangle22} />
+            <div className="overlap-group-4">
+              <div className="address-1 valign-text-middle mulish-regular-normal-black-12px">
+                {address}
+              </div>
+              <div className="address-2 valign-text-middle mulish-regular-normal-black-12px">
+                {address2}
+              </div>
+              <p className="text- valign-text-middle mulish-regular-normal-granite-gray-10px">
+                {text10}
+              </p>
             </div>
           </div>
-          <img alt="" className="rectangle-22-2" src={rectangle22} />
+          <img className="vector-19-1" src={vector19} />
+        </div>
+        <div className="flex-row-1">
           <div className="overlap-group-1">
-            <div className="address-1 valign-text-middle mulish-normal-black-12px">
-              {address}
-            </div>
-            <div className="address-2 valign-text-middle mulish-normal-black-12px">
-              {address2}
-            </div>
-            <p className="text- valign-text-middle mulish-normal-granite-gray-10px">
-              {text10}
-            </p>
+            <div className="rectangle-17"></div>
+            <img className="star-6" src={star6} />
           </div>
+          <div className="overlap-group-2">
+            <div className="rectangle-18"></div>
+            <img className="star--1" src={star7} />
+          </div>
+          <div className="overlap-group-3">
+            <div className="rectangle-"></div>
+            <img className="star--2" src={star8} />
+          </div>
+          <div className="overlap-group-3">
+            <div className="rectangle-"></div>
+            <img className="star--1" src={star9} />
+          </div>
+          <div className="overlap-group-3">
+            <div className="rectangle-"></div>
+            <img className="star--2" src={star10} />
+          </div>
+          <p className="text--1 valign-text-middle mulish-regular-normal-boulder-10px">
+            {text11}
+          </p>
         </div>
-        <img alt="" className="vector-19-1" src={vector19} />
+        <div className="fsbopk-was-very-sim valign-text-middle roboto-bold-white-20px">
+          <span>
+            <span className="span">{spanText}</span>
+            <span className="span-1">{spanText2}</span>
+            <span className="span2">{spanText3}</span>
+            <span className="span">{spanText4}</span>
+            <span className="span-1">{spanText5}</span>
+          </span>
+        </div>
       </div>
-      <div className="flex-row-1">
-        <div className="overlap-group-2">
-          <img alt="" className="star-6" src={star6} />
-        </div>
-        <div className="overlap-group-3">
-          <img alt="" className="star--1" src={star7} />
-        </div>
-        <div className="overlap-group-4">
-          <img alt="" className="star--1" src={star8} />
-        </div>
-        <div className="overlap-group-5">
-          <img alt="" className="star--1" src={star9} />
-        </div>
-        <div className="overlap-group-4">
-          <img alt="" className="star--1" src={star10} />
-        </div>
-        <p className="text--1 valign-text-middle mulish-normal-boulder-10px">
-          {text11}
-        </p>
+    </div>
+  );
+}
+
+function Frame63(props) {
+  const { afaqAhmedI169573, text9 } = props;
+
+  return (
+    <div className="frame-6-1">
+      <div className="afaq-ahmed-i169573 valign-text-middle roboto-bold-black-14px">
+        {afaqAhmedI169573}
       </div>
-      <p className="fsbopk-was-very-sim valign-text-middle roboto-bold-white-14px">
-        <span>
-          <span className="span">{spanText}</span>
-          <span className="span-1">{spanText2}</span>
-          <span className="span">{spanText3}</span>
-          <span className="span-1">{spanText4}</span>
-        </span>
-      </p>
+      <div className="text-9 valign-text-middle mulish-regular-normal-granite-gray-12px">
+        {text9}
+      </div>
     </div>
   );
 }
@@ -442,21 +496,66 @@ function HowToVideos(props) {
         {text16}
       </div>
       <VideoTag2>{videoTag2Props.children}</VideoTag2>
-      <div className="flex-row-3">
-        <div className="rectangle-3"></div>
-        <p className="text-18 valign-text-middle roboto-normal-black-15px">
+      <div className="flex-row">
+        <div className="rectangle-3">
+          <iframe
+            style={{ border: 0 }}
+            id="ytplayer"
+            type="text/html"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/btPYbuw3yG0?rel=0"
+            frameborder="0"
+            allowfullscreen="allowfullscreen"
+            mozallowfullscreen="mozallowfullscreen"
+            msallowfullscreen="msallowfullscreen"
+            oallowfullscreen="oallowfullscreen"
+            webkitallowfullscreen="webkitallowfullscreen"
+          ></iframe>
+        </div>
+        <p className="text-18 valign-text-middle roboto-regular-normal-black-15px">
           {text18}
         </p>
       </div>
-      <div className="flex-row-6">
-        <div className="rectangle-3"></div>
-        <p className="text-19 valign-text-middle roboto-normal-black-15px">
+      <div className="flex-row-3">
+        <div className="rectangle-3">
+          <iframe
+            style={{ border: 0 }}
+            id="ytplayer"
+            type="text/html"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/btPYbuw3yG0?rel=0"
+            frameborder="0"
+            allowfullscreen="allowfullscreen"
+            mozallowfullscreen="mozallowfullscreen"
+            msallowfullscreen="msallowfullscreen"
+            oallowfullscreen="oallowfullscreen"
+            webkitallowfullscreen="webkitallowfullscreen"
+          ></iframe>
+        </div>
+        <p className="text-19 valign-text-middle roboto-regular-normal-black-15px">
           {text19}
         </p>
       </div>
-      <div className="flex-row">
-        <div className="rectangle-3"></div>
-        <p className="text--2 valign-text-middle roboto-normal-black-15px">
+      <div className="flex-row-5">
+        <div className="rectangle-3">
+          <iframe
+            style={{ border: 0 }}
+            id="ytplayer"
+            type="text/html"
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/btPYbuw3yG0?rel=0"
+            frameborder="0"
+            allowfullscreen="allowfullscreen"
+            mozallowfullscreen="mozallowfullscreen"
+            msallowfullscreen="msallowfullscreen"
+            oallowfullscreen="oallowfullscreen"
+            webkitallowfullscreen="webkitallowfullscreen"
+          ></iframe>
+        </div>
+        <p className="text--2 valign-text-middle roboto-regular-normal-black-15px">
           {text20}
         </p>
       </div>
@@ -469,8 +568,23 @@ function VideoTag2(props) {
 
   return (
     <div className="video-tag-2">
-      <div className="rectangle-3"></div>
-      <p className="text--2 valign-text-middle roboto-normal-black-15px">
+      <div className="rectangle-3">
+        <iframe
+          style={{ border: 0 }}
+          id="ytplayer"
+          type="text/html"
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/btPYbuw3yG0?rel=0"
+          frameborder="0"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+        ></iframe>
+      </div>
+      <p className="text--2 valign-text-middle roboto-regular-normal-black-15px">
         {children}
       </p>
     </div>
@@ -494,28 +608,31 @@ const reviewHeaderData = {
   address: "500 Reviews",
 };
 
+const frame6Data = {
+  afaqAhmed: "Afaq Ahmed",
+  homeSeller: "Home Seller",
+};
+
 const reveiwData = {
   rectangle62:
     "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606998b6ab2c12180fafb74a/img/rectangle-62@2x.png",
-  afaqAhmed: "Afaq Ahmed",
-  homeSeller: "Home Seller",
   rectangle22:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/rectangle-22@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/rectangle-22@2x.png",
   address: "121 McMurray Cir,",
   address2: "Nashville, TN 37211",
   text3: "Listed on Feb 22, 2021",
   vector19:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-19@1x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/vector-19@1x.png",
   star6:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-6@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-6@2x.png",
   star7:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   star8:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   star9:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   star10:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   text5: "Original review: Mar 1, 2021",
   spanText: "FSBO.pk",
   spanText2: " ",
@@ -528,33 +645,37 @@ const reveiwData = {
       <br />
     </>
   ),
+  frame6Props: frame6Data,
+};
+
+const frame62Data = {
+  afaqAhmedI169549: "Kinza wali",
+  text6: "Home Seller",
 };
 
 const reveiw2Data = {
-  afaqAhmedI169549: "Kinza wali",
-  text6: "Home Seller",
   rectangle22:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/rectangle-22@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/rectangle-22@2x.png",
   address: "121 McMurray Cir,",
   address2: "Nashville, TN 37211",
   text7: "Listed on Feb 22, 2021",
   vector19:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-19@1x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/vector-19@1x.png",
   star6:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-6@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-6@2x.png",
   star7:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   star8:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   star9:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   star10:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   text8: "Original review: Mar 1, 2021",
   spanText: "FSBO.pk",
-  spanText2: (
+  spanText2: " ",
+  spanText3: (
     <>
-      {" "}
       was one of our strongest choices to sell our home ever.
       <br />
       Their creative approach to real estate made it possible for us to sell our
@@ -563,33 +684,37 @@ const reveiw2Data = {
       part of it was that we had to keep all of our own profits on our offer.
     </>
   ),
+  frame62Props: frame62Data,
+};
+
+const frame63Data = {
+  afaqAhmedI169573: "Badar Khawar",
+  text9: "Home Seller",
 };
 
 const reveiw3Data = {
-  afaqAhmedI169573: "Badar Khawar",
-  text9: "Home Seller",
   rectangle22:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/rectangle-22@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/rectangle-22@2x.png",
   address: "121 McMurray Cir,",
   address2: "Nashville, TN 37211",
   text10: "Listed on Feb 22, 2021",
   vector19:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-19@1x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/vector-19@1x.png",
   star6:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-6@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-6@2x.png",
   star7:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   star8:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   star9:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   star10:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
   text11: "Original review: Mar 1, 2021",
   spanText: "FSBO.pk",
-  spanText2: (
+  spanText2: " ",
+  spanText3: (
     <>
-      {" "}
       was a great way for me to try to sell my own house.
       <br />
       It was incredibly easy to set up and post pictures of our house. It easily
@@ -597,12 +722,13 @@ const reveiw3Data = {
       by yourself, <br />I would highly consider using{" "}
     </>
   ),
-  spanText3: "FSBO.pk",
-  spanText4: (
+  spanText4: "FSBO.pk",
+  spanText5: (
     <>
       . <br />
     </>
   ),
+  frame63Props: frame63Data,
 };
 
 const videoTag2Data = {
@@ -618,7 +744,7 @@ const howToVideosData = {
   videoTag2Props: videoTag2Data,
 };
 
-const ReviewsData = {
+const ReviewsPageData = {
   x11:
     "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/1-1@2x.png",
   vector15:

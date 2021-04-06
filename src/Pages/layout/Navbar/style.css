@@ -1,0 +1,201 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Mulish:400,700,600|DM+Sans:400,700|Roboto:400,700|Raleway:400");
+* {
+  box-sizing: border-box;
+}
+.blog {
+  height: 18px;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-left: 47px;
+  min-height: 18px;
+  min-width: 33px;
+  white-space: nowrap;
+}
+.buttons {
+  align-items: center;
+  display: flex;
+  height: 59px;
+  left: 1039px;
+  position: absolute;
+  top: 15px;
+  width: 367px;
+}
+.buy {
+  height: 18px;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  min-height: 18px;
+  min-width: 28px;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.faqs {
+  height: 18px;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-left: 47px;
+  min-height: 18px;
+  min-width: 40px;
+}
+.for-sale-by-owner {
+  height: 18px;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-left: 47px;
+  min-height: 18px;
+  min-width: 128px;
+  white-space: nowrap;
+}
+.group-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 37px;
+  width: 148px;
+}
+.label {
+  height: 17px;
+  line-height: 17px;
+  margin-top: 1px;
+  min-height: 17px;
+  white-space: nowrap;
+}
+.label-1 {
+  height: 18px;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  min-height: 18px;
+  white-space: nowrap;
+}
+.label-2 {
+  height: 23px;
+  left: 18px;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  position: absolute;
+  text-align: center;
+  top: 6px;
+  width: 113px;
+}
+.links {
+  align-items: center;
+  display: flex;
+  height: 88px;
+  left: 225px;
+  padding: 0 57px;
+  position: absolute;
+  top: 0px;
+  width: 775px;
+}
+.mulish-bold-san-marino-12px {
+  color: var(--san-marino);
+  font-family: "Mulish", Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+.mulish-bold-white-12px {
+  color: white;
+  font-family: "Mulish", Helvetica;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+.mulish-semi-bold-cape-cod-14px {
+  color: var(--cape-cod);
+  font-family: "Mulish", Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.nav-bar {
+  align-items: center;
+  background-color: var(--black-squeeze);
+  height: 88px;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+.nav-bar:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.pricing {
+  height: 18px;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-left: 47px;
+  min-height: 18px;
+  min-width: 49px;
+  white-space: nowrap;
+}
+.rectangle-34 {
+  height: 68px;
+  left: 24px;
+  position: absolute;
+  top: 10px;
+  width: 149px;
+}
+.reviews {
+  height: 18px;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-left: 47px;
+  min-height: 18px;
+  min-width: 59px;
+  white-space: nowrap;
+}
+.sigin {
+  height: 18px;
+  letter-spacing: 0.2px;
+  line-height: 18px;
+  margin-left: 47px;
+  min-height: 18px;
+  min-width: 36px;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.sigin:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.span {
+  color: rgba(60, 99, 176, 1);
+  font-family: "Mulish", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.14px;
+}
+.span1 {
+  color: rgba(60, 99, 176, 1);
+  font-family: "Mulish", Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+.start-listing-button {
+  background-color: var(--fun-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 36px;
+  margin-left: 36px;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 145px;
+}
+.start-listing-button:hover {
+  transform: scale(1.1);
+}
+:root {
+  --black-squeeze: rgba(243, 246, 250, 1);
+  --cape-cod: rgba(55, 63, 65, 1);
+  --fun-blue: rgba(12, 90, 165, 1);
+  --san-marino: rgba(60, 99, 176, 1);
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

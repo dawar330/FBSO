@@ -1,0 +1,1158 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+.border-1px-alto {
+  border: 1px solid var(--alto);
+}
+.border-1px-bdazzled-blue {
+  border: 1px solid var(--bdazzled-blue);
+}
+.border-1px-bon-jour {
+  border: 1px solid var(--bon-jour);
+}
+.border-1px-forest-green {
+  border: 1px solid var(--forest-green);
+}
+.border-1px-twine {
+  border: 1px solid var(--twine);
+}
+.border-class-1 {
+  border: 1px solid rgba(12, 76, 137, 1);
+}
+.border-class-2 {
+  border: 1px solid rgba(124, 184, 149, 1);
+}
+.border-class-3 {
+  border: 1px solid rgba(25, 25, 25, 1);
+}
+.border-class-4 {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+.border-class-5 {
+  border: 1px solid rgba(229, 229, 229, 1);
+}
+.pricing-page {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 2776px;
+  padding: 3px 0;
+  width: 100%;
+}
+.pricing-page .address {
+  left: 570px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 106px;
+  width: 84px;
+}
+.pricing-page .address-1 {
+  left: 547px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 104px;
+  width: 213px;
+}
+.pricing-page .address-2 {
+  left: 319px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 106px;
+  width: 74px;
+}
+.pricing-page .basic-fsbo-package {
+  left: 33px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 44px;
+}
+.pricing-page .bronze {
+  color: var(--fun-blue);
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 315px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 24px;
+}
+.pricing-page .bronze-1 {
+  left: 82px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 11px;
+}
+.pricing-page .cancellation {
+  left: 69px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 230px;
+}
+.pricing-page .color {
+  left: 621px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 11px;
+}
+.pricing-page .color-1 {
+  left: 342px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 11px;
+}
+.pricing-page .color-2 {
+  color: var(--silver-tree);
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 575px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 24px;
+}
+.pricing-page .color-3 {
+  left: 854px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 24px;
+}
+.pricing-page .contract-review {
+  left: 54px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1371px;
+}
+.pricing-page .date {
+  left: 572px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 633px;
+  width: 78px;
+}
+.pricing-page .date-1 {
+  left: 317px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 180px;
+  width: 78px;
+}
+.pricing-page .date-2 {
+  left: 573px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 180px;
+  width: 78px;
+}
+.pricing-page .escrow-agent {
+  left: 64px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 914px;
+}
+.pricing-page .flex-row {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 27px;
+  margin-top: 19px;
+  min-width: 653px;
+}
+.pricing-page .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 23px;
+  margin-top: 10px;
+  min-width: 653px;
+}
+.pricing-page .flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 250px;
+  margin-top: 49px;
+  min-width: 532px;
+}
+.pricing-page .flex-row-3 {
+  align-items: flex-start;
+  display: flex;
+  height: 235px;
+  margin-right: 6px;
+  margin-top: 19px;
+  min-width: 944px;
+}
+.pricing-page .frame-39 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 156px;
+  margin-top: 53px;
+  min-width: 1006px;
+}
+.pricing-page .free {
+  left: 91px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 72px;
+}
+.pricing-page .high {
+  left: 866px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 785px;
+}
+.pricing-page .listing-term {
+  left: 69px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 153px;
+  width: 104px;
+}
+.pricing-page .low {
+  left: 340px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 785px;
+}
+.pricing-page .medium {
+  left: 586px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 785px;
+}
+.pricing-page .most-popular {
+  letter-spacing: 0px;
+  min-height: 23px;
+  min-width: 122px;
+  text-align: center;
+}
+.pricing-page .name {
+  left: 832px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 106px;
+  width: 98px;
+}
+.pricing-page .name-1 {
+  left: 33px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 758px;
+}
+.pricing-page .optional {
+  left: 585px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1208px;
+}
+.pricing-page .optional-1 {
+  left: 854px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1399px;
+}
+.pricing-page .optional-2 {
+  left: 854px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1323px;
+}
+.pricing-page .optional-3 {
+  left: 585px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1091px;
+}
+.pricing-page .optional-4 {
+  left: 581px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1017px;
+  width: 55px;
+}
+.pricing-page .optional-5 {
+  left: 326px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1323px;
+  width: 61px;
+}
+.pricing-page .optional-6 {
+  left: 585px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1323px;
+}
+.pricing-page .optional-7 {
+  left: 585px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1399px;
+}
+.pricing-page .overlap-group {
+  height: 222px;
+  margin-right: 3px;
+  margin-top: 7px;
+  position: relative;
+  width: 781px;
+}
+.pricing-page .overlap-group-1 {
+  align-items: flex-start;
+  background-color: var(--fun-blue);
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 29px;
+  min-width: 109px;
+  padding: 5px 16px;
+}
+.pricing-page .overlap-group-2 {
+  align-items: flex-start;
+  background-color: var(--silver-tree);
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 29px;
+  margin-left: 153px;
+  min-width: 109px;
+  padding: 5px 16px;
+}
+.pricing-page .overlap-group-3 {
+  align-items: flex-start;
+  background-color: var(--aztec-gold);
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 29px;
+  margin-left: 173px;
+  min-width: 109px;
+  padding: 5px 16px;
+}
+.pricing-page .overlap-group1 {
+  align-items: flex-start;
+  background-color: rgba(255, 249, 249, 1);
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin-left: 17px;
+  min-height: 235px;
+  padding: 10px 8px;
+  width: 222px;
+}
+.pricing-page .overlap-group11 {
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgba(225, 225, 225, 1);
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  min-height: 235px;
+  padding: 10px 6px;
+  width: 222px;
+}
+.pricing-page .overlap-group12 {
+  align-items: flex-end;
+  background-color: var(--silver-tree);
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 43px;
+  justify-content: flex-end;
+  min-width: 264px;
+  padding: 9px 81px;
+}
+.pricing-page .overlap-group13 {
+  height: 255px;
+  left: 0px;
+  position: absolute;
+  top: -1px;
+  width: 100%;
+}
+.pricing-page .overlap-group14 {
+  align-items: flex-end;
+  background-color: var(--fun-blue);
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 54px;
+  left: 599px;
+  min-width: 227px;
+  padding: 12px 11px;
+  position: absolute;
+  top: 151px;
+}
+.pricing-page .overlap-group15 {
+  height: 1459px;
+  margin-left: -8px;
+  position: relative;
+  width: 1014px;
+}
+.pricing-page .overlap-group3 {
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  min-height: 235px;
+  padding: 10px 8px;
+  width: 222px;
+}
+.pricing-page .overlap-group4 {
+  align-items: flex-end;
+  background-color: var(--aztec-gold);
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 43px;
+  margin-left: 2px;
+  min-width: 266px;
+  padding: 9px 72px;
+}
+.pricing-page .overlap-group7 {
+  align-items: flex-start;
+  background-color: rgba(255, 253, 253, 1);
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin-left: 19px;
+  min-height: 235px;
+  padding: 10px 8px;
+  width: 222px;
+}
+.pricing-page .pricing-page-header {
+  height: 254px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.pricing-page .pro-photography {
+  left: 52px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1295px;
+}
+.pricing-page .ready-to-list {
+  letter-spacing: 0px;
+  min-height: 29px;
+  min-width: 195px;
+}
+.pricing-page .real-estate-forms {
+  left: 47px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1064px;
+}
+.pricing-page .rectangle-10 {
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 143px;
+  width: 205px;
+}
+.pricing-page .rectangle-102 {
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 143px;
+  margin-right: 5px;
+  width: 205px;
+}
+.pricing-page .rectangle-103 {
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 143px;
+  width: 204px;
+}
+.pricing-page .rectangle-44 {
+  height: 254px;
+  left: 3px;
+  position: absolute;
+  top: 1px;
+  width: 388px;
+}
+.pricing-page .rectangle-45 {
+  height: 254px;
+  left: 1049px;
+  position: absolute;
+  top: 0px;
+  width: 391px;
+}
+.pricing-page .rectangle-49 {
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 221px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 781px;
+}
+.pricing-page .rectangle-65 {
+  height: 1459px;
+  left: 8px;
+  position: absolute;
+  top: 0px;
+  width: 1006px;
+}
+.pricing-page .select-plan {
+  letter-spacing: 0px;
+  min-height: 18px;
+  min-width: 77px;
+  text-align: center;
+}
+.pricing-page .seller-disclosures {
+  left: 47px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 840px;
+}
+.pricing-page .span {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 14px;
+}
+.pricing-page .span1 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+}
+.pricing-page .span1-1 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Raleway-Regular", Helvetica;
+  font-size: 14px;
+}
+.pricing-page .surname {
+  letter-spacing: 0px;
+  min-height: 23px;
+  min-width: 97px;
+  text-align: center;
+}
+.pricing-page .surname-1 {
+  left: 52px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 990px;
+}
+.pricing-page .text-1 {
+  left: 320px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 19px;
+}
+.pricing-page .text-10 {
+  left: 0px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 1138px;
+  width: 241px;
+}
+.pricing-page .text-11 {
+  height: 42px;
+  left: 9px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 314px;
+  width: 226px;
+}
+.pricing-page .text-12 {
+  height: 42px;
+  left: 9px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 524px;
+  width: 226px;
+}
+.pricing-page .text-13 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 106px;
+  width: 184px;
+}
+.pricing-page .text-14 {
+  left: 28px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 257px;
+  width: 184px;
+}
+.pricing-page .text-15 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 180px;
+  width: 184px;
+}
+.pricing-page .text-16 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 785px;
+  width: 184px;
+}
+.pricing-page .text-17 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 867px;
+  width: 184px;
+}
+.pricing-page .text-18 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 1017px;
+  width: 184px;
+}
+.pricing-page .text-19 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 1187px;
+  width: 184px;
+}
+.pricing-page .text-2 {
+  left: 379px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 76px;
+}
+.pricing-page .text-20 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 941px;
+  width: 184px;
+}
+.pricing-page .text-21 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 1091px;
+  width: 184px;
+}
+.pricing-page .text-22 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 1323px;
+  width: 184px;
+}
+.pricing-page .text-23 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 1399px;
+  width: 184px;
+}
+.pricing-page .text-24 {
+  left: 28px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 362px;
+  width: 184px;
+}
+.pricing-page .text-25 {
+  left: 28px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 572px;
+  width: 184px;
+}
+.pricing-page .text-26 {
+  letter-spacing: 0px;
+  margin-left: 17px;
+  margin-top: 111px;
+  min-height: 33px;
+  min-width: 773px;
+  text-align: center;
+}
+.pricing-page .text-3 {
+  letter-spacing: 0px;
+  margin-left: 2px;
+  margin-top: 55px;
+  min-height: 33px;
+  min-width: 712px;
+}
+.pricing-page .text-4 {
+  letter-spacing: 0px;
+  margin-right: 15px;
+  margin-top: 29px;
+  min-height: 28px;
+  min-width: 353px;
+  text-align: center;
+}
+.pricing-page .text-5 {
+  left: 281px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 104px;
+  width: 222px;
+}
+.pricing-page .text-6 {
+  left: 24px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 104px;
+  width: 219px;
+}
+.pricing-page .text-7 {
+  left: 266px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 42px;
+}
+.pricing-page .text-8 {
+  left: 521px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 43px;
+}
+.pricing-page .text-9 {
+  left: 29px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 79px;
+  width: 184px;
+}
+.pricing-page .unlimited {
+  left: 842px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 180px;
+  width: 79px;
+}
+.pricing-page .unlimited-1 {
+  left: 841px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 633px;
+  width: 79px;
+}
+.pricing-page .vector- {
+  height: 18px;
+  left: 346px;
+  position: absolute;
+  top: 1207px;
+  width: 20px;
+}
+.pricing-page .vector--1 {
+  height: 18px;
+  left: 346px;
+  position: absolute;
+  top: 632px;
+  width: 20px;
+}
+.pricing-page .vector-31 {
+  height: 2px;
+  left: 0px;
+  position: absolute;
+  top: 253px;
+  width: 100%;
+}
+.pricing-page .vector-32 {
+  height: 222px;
+  left: 249px;
+  position: absolute;
+  top: 0px;
+  width: 1px;
+}
+.pricing-page .vector-33 {
+  height: 221px;
+  left: 514px;
+  position: absolute;
+  top: 1px;
+  width: 1px;
+}
+.pricing-page .vector-50 {
+  height: 1459px;
+  left: 481px;
+  position: absolute;
+  top: 0px;
+  width: 2px;
+}
+.pricing-page .vector-51 {
+  height: 1459px;
+  left: 746px;
+  position: absolute;
+  top: 0px;
+  width: 2px;
+}
+.pricing-page .vector-52 {
+  height: 1459px;
+  left: 232px;
+  position: absolute;
+  top: 0px;
+  width: 2px;
+}
+.pricing-page .vector-53 {
+  height: 1px;
+  left: 8px;
+  position: absolute;
+  top: 65px;
+  width: 1005px;
+}
+.pricing-page .vector-54 {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 145px;
+  width: 1004px;
+}
+.pricing-page .vector-55 {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 222px;
+  width: 1004px;
+}
+.pricing-page .vector-56 {
+  height: 2px;
+  left: 8px;
+  position: absolute;
+  top: 306px;
+  width: 1004px;
+}
+.pricing-page .vector-57 {
+  height: 2px;
+  left: 8px;
+  position: absolute;
+  top: 514px;
+  width: 1004px;
+}
+.pricing-page .vector-58 {
+  height: 2px;
+  left: 8px;
+  position: absolute;
+  top: 754px;
+  width: 1004px;
+}
+.pricing-page .vector-59 {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 835px;
+  width: 1004px;
+}
+.pricing-page .vector-6 {
+  height: 18px;
+  left: 346px;
+  position: absolute;
+  top: 1398px;
+  width: 20px;
+}
+.pricing-page .vector-60 {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 909px;
+  width: 1004px;
+}
+.pricing-page .vector-61 {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 983px;
+  width: 1004px;
+}
+.pricing-page .vector-62 {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 1059px;
+  width: 1004px;
+}
+.pricing-page .vector-63 {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 1133px;
+  width: 1004px;
+}
+.pricing-page .vector-64 {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 1287px;
+  width: 1004px;
+}
+.pricing-page .vector-65 {
+  height: 2px;
+  left: 9px;
+  position: absolute;
+  top: 1365px;
+  width: 1004px;
+}
+.pricing-page .vector-68 {
+  height: 23px;
+  left: 334px;
+  position: absolute;
+  top: 410px;
+  width: 39px;
+}
+.pricing-page .vector-7 {
+  height: 18px;
+  left: 346px;
+  position: absolute;
+  top: 1016px;
+  width: 20px;
+}
+.pricing-page .vector-7-1 {
+  height: 18px;
+  left: 346px;
+  position: absolute;
+  top: 1087px;
+  width: 20px;
+}
+.pricing-page .vector-7-2 {
+  height: 18px;
+  left: 346px;
+  position: absolute;
+  top: 940px;
+  width: 20px;
+}
+.pricing-page .vector-7-3 {
+  height: 18px;
+  left: 346px;
+  position: absolute;
+  top: 863px;
+  width: 20px;
+}
+.pricing-page .vector-81 {
+  height: 23px;
+  left: 334px;
+  position: absolute;
+  top: 258px;
+  width: 39px;
+}
+.pricing-page .vector-82 {
+  height: 23px;
+  left: 590px;
+  position: absolute;
+  top: 410px;
+  width: 39px;
+}
+.pricing-page .vector-83 {
+  height: 23px;
+  left: 590px;
+  position: absolute;
+  top: 258px;
+  width: 39px;
+}
+.pricing-page .vector-84 {
+  height: 23px;
+  left: 860px;
+  position: absolute;
+  top: 410px;
+  width: 39px;
+}
+.pricing-page .vector-85 {
+  height: 23px;
+  left: 860px;
+  position: absolute;
+  top: 258px;
+  width: 39px;
+}
+.pricing-page .vector-86 {
+  height: 23px;
+  left: 590px;
+  position: absolute;
+  top: 863px;
+  width: 39px;
+}
+.pricing-page .vector-87 {
+  height: 23px;
+  left: 860px;
+  position: absolute;
+  top: 863px;
+  width: 39px;
+}
+.pricing-page .vector-88 {
+  height: 23px;
+  left: 590px;
+  position: absolute;
+  top: 935px;
+  width: 39px;
+}
+.pricing-page .vector-89 {
+  height: 23px;
+  left: 860px;
+  position: absolute;
+  top: 935px;
+  width: 39px;
+}
+.pricing-page .vector-90 {
+  height: 23px;
+  left: 860px;
+  position: absolute;
+  top: 1010px;
+  width: 39px;
+}
+.pricing-page .vector-91 {
+  height: 23px;
+  left: 860px;
+  position: absolute;
+  top: 1080px;
+  width: 39px;
+}
+.pricing-page .vector-92 {
+  height: 23px;
+  left: 860px;
+  position: absolute;
+  top: 1202px;
+  width: 39px;
+}
+.pricing-page .video-text {
+  align-self: center;
+  letter-spacing: 0px;
+  margin-left: 5px;
+  margin-top: 17px;
+  min-height: 42px;
+  text-align: center;
+  width: 147px;
+}
+.pricing-page .video-text-1 {
+  align-self: center;
+  letter-spacing: 0px;
+  margin-left: 4px;
+  margin-top: 17px;
+  min-height: 42px;
+  text-align: center;
+  width: 146px;
+}
+.pricing-page .video-text-2 {
+  letter-spacing: 0px;
+  margin-left: 2px;
+  margin-top: 17px;
+  min-height: 42px;
+  text-align: center;
+  width: 146px;
+}
+.roboto-bold-aztec-gold-20px {
+  color: var(--aztec-gold);
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.roboto-bold-black-18px {
+  color: black;
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+.roboto-bold-black-20px {
+  color: black;
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.roboto-bold-black-28px {
+  color: black;
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+}
+.roboto-bold-black-32px {
+  color: black;
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+.roboto-bold-white-25px {
+  color: white;
+  font-family: "Roboto-Bold", Helvetica;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+}
+.roboto-regular-normal-black-14px {
+  color: black;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.roboto-regular-normal-black-24px {
+  color: black;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+.roboto-regular-normal-white-15px {
+  color: white;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+.roboto-regular-normal-white-20px {
+  color: white;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --alto: rgba(217, 217, 217, 1);
+  --aztec-gold: rgba(201, 153, 80, 1);
+  --bdazzled-blue: rgba(40, 95, 149, 1);
+  --bon-jour: rgba(226, 226, 226, 1);
+  --forest-green: rgba(108, 177, 137, 1);
+  --fun-blue: rgba(12, 90, 165, 1);
+  --silver-tree: rgba(95, 180, 130, 1);
+  --twine: rgba(194, 157, 101, 1);
+}
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}

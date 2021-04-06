@@ -1,0 +1,203 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+.animate-enter {
+  animation: animate-enter-frames 0.2s ease-in-out 0s 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+.icon-outlined-other-other-box {
+  align-items: flex-start;
+  display: flex;
+  height: 32px;
+  left: 38px;
+  padding: 1.5px 3px;
+  position: absolute;
+  top: 56px;
+  width: 32px;
+}
+.image {
+  height: 222px;
+  left: 110px;
+  position: absolute;
+  top: 0px;
+  width: 449px;
+}
+.label {
+  height: 18px;
+  left: 18px;
+  letter-spacing: 0.3px;
+  line-height: 18px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  white-space: nowrap;
+}
+.left {
+  height: 143px;
+  left: 68px;
+  pointer-events: auto;
+  position: absolute;
+  top: 290px;
+  transition: all 0.2s ease;
+  width: 565px;
+}
+.left-1 {
+  height: 143px;
+  left: 0px;
+  pointer-events: auto;
+  position: absolute;
+  top: 210px;
+  transition: all 0.2s ease;
+  width: 642px;
+}
+.left-1:hover {
+  transform: scale(1.1);
+}
+.left:hover {
+  transform: scale(1.1);
+}
+.mulish-bold-cape-cod-32px {
+  color: var(--cape-cod);
+  font-family: "Mulish", Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+.mulish-bold-white-14px {
+  color: white;
+  font-family: "Mulish", Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+}
+.mulish-normal-black-16px {
+  color: black;
+  font-family: "Mulish", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.mulish-normal-rolling-stone-16px {
+  color: var(--rolling-stone);
+  font-family: "Mulish", Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.overlap-group {
+  height: 353px;
+  left: 780px;
+  position: absolute;
+  top: 70px;
+  width: 642px;
+}
+.overlap-group1 {
+  background-size: 100% 100%;
+  height: 29px;
+  position: relative;
+  width: 26px;
+}
+.panel3 {
+  background-color: var(--whisper);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 580px;
+  pointer-events: auto;
+  position: relative;
+  transition: all 0.2s ease;
+  width: 1440px;
+  opacity: 0;
+}
+.panel3:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0px 12px 5px -8px rgba(0, 0, 0, 0.2);
+}
+.partner-button {
+  background-color: var(--san-marino);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 42px;
+  left: 630px;
+  pointer-events: auto;
+  position: absolute;
+  top: 433px;
+  transition: all 0.2s ease;
+  width: 150px;
+}
+.partner-button:hover {
+  transform: scale(1.1);
+}
+.text-1 {
+  left: 86px;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  position: absolute;
+  text-align: right;
+  top: 50px;
+}
+.text-2 {
+  left: 272px;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  position: absolute;
+  top: 38px;
+  width: 257px;
+}
+.text-3 {
+  left: 86px;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  position: absolute;
+  text-align: right;
+  top: 60px;
+  white-space: nowrap;
+}
+.text-4 {
+  left: 348px;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  position: absolute;
+  top: 38px;
+  width: 257px;
+}
+.text-5 {
+  left: 69px;
+  letter-spacing: 0.1px;
+  line-height: 40px;
+  position: absolute;
+  top: 133px;
+  width: 542px;
+}
+.vector {
+  height: 16px;
+  left: 12px;
+  position: absolute;
+  top: 13px;
+  width: 2px;
+}
+.vector-1 {
+  height: 10px;
+  left: 0px;
+  position: absolute;
+  top: 6px;
+  width: 26px;
+}
+:root {
+  --cape-cod: rgba(55, 63, 65, 1);
+  --rolling-stone: rgba(115, 123, 125, 1);
+  --san-marino: rgba(60, 99, 176, 1);
+  --whisper: rgba(244, 246, 251, 1);
+}
+@keyframes animate-enter-frames {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
