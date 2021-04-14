@@ -349,6 +349,14 @@
   text-align: center;
   top: 786px;
 }
+.sign-in-page .for-sale-by-owner-faq {
+  align-items: flex-end;
+  display: flex;
+  height: 72px;
+  margin-right: 51px;
+  margin-top: 37px;
+  width: 1315px;
+}
 .sign-in-page .video-text-2 {
   left: 324px;
   letter-spacing: 0px;

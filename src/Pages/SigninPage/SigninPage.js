@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
-
+import firebase from "../../firebase/config";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
@@ -12,6 +12,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import "./style.css";
 function SiginPage() {
+  const [Email, setEmail] = useState();
+  const [Pass, setPass] = useState();
   const useStyles = makeStyles((theme) => ({
     root: {
       height: "100vh",
@@ -160,6 +162,10 @@ function SiginPage() {
                   required
                   fullWidth
                   id="email"
+                  value={Email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                   label="Email Address"
                   name="email"
                   autoComplete="email"
@@ -168,24 +174,41 @@ function SiginPage() {
                 <TextField
                   variant="outlined"
                   margin="normal"
-                  required
                   fullWidth
                   name="password"
                   label="Password"
                   type="password"
                   id="password"
                   autoComplete="current-password"
+                  value={Pass}
+                  onChange={(e) => {
+                    setPass(e.target.value);
+                  }}
                 />
                 <FormControlLabel
                   control={<Checkbox value="remember" color="primary" />}
                   label="Remember me"
                 />
                 <Button
-                  type="submit"
                   fullWidth
                   variant="contained"
                   color="primary"
                   className={classes.submit}
+                  onClick={() => {
+                    firebase
+                      .auth()
+                      .signInWithEmailAndPassword(Email, Pass)
+                      .then((userCredential) => {
+                        // Signed in
+                        var user = userCredential.user;
+                        // ...
+                      })
+                      .catch((error) => {
+                        var errorCode = error.code;
+                        var errorMessage = error.message;
+                        // ..
+                      });
+                  }}
                 >
                   Sign In
                 </Button>

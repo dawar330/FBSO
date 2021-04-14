@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
-
+import firebase, { db } from "../../firebase/config";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
@@ -12,6 +12,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import "./style.css";
 function SignupPage() {
+  const [FirstName, setFirstName] = useState();
+  const [LastName, setLastName] = useState();
+  const [Email, setEmail] = useState();
+  const [Pass, setPass] = useState();
   const useStyles = makeStyles((theme) => ({
     root: {
       height: "100vh",
@@ -163,6 +167,10 @@ function SignupPage() {
                   label="First Name"
                   type="text"
                   id="FirstName"
+                  value={FirstName}
+                  onChange={(e) => {
+                    setFirstName(e.target.value);
+                  }}
                 />
                 <TextField
                   variant="outlined"
@@ -173,6 +181,10 @@ function SignupPage() {
                   label="Last Name"
                   type="text"
                   id="LastName"
+                  value={LastName}
+                  onChange={(e) => {
+                    setLastName(e.target.value);
+                  }}
                 />
                 <TextField
                   variant="outlined"
@@ -183,7 +195,10 @@ function SignupPage() {
                   label="Email Address"
                   name="email"
                   autoComplete="email"
-                  autoFocus
+                  autoFocusvalue={Email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
                 />
                 <TextField
                   variant="outlined"
@@ -195,6 +210,10 @@ function SignupPage() {
                   type="password"
                   id="password"
                   autoComplete="current-password"
+                  value={Pass}
+                  onChange={(e) => {
+                    setPass(e.target.value);
+                  }}
                 />
 
                 <FormControlLabel
@@ -202,7 +221,25 @@ function SignupPage() {
                   label="Remember me"
                 />
                 <Button
-                  type="submit"
+                  onClick={() => {
+                    firebase
+                      .auth()
+                      .createUserWithEmailAndPassword(Email, Pass)
+                      .then((resp) => {
+                        return db.collection("users").doc(resp.user.uid).set({
+                          firstname: FirstName,
+                          lastname: LastName,
+                          Email: Email,
+                        });
+                      })
+
+                      .catch((error) => {
+                        var errorCode = error.code;
+                        var errorMessage = error.message;
+                        console.log(error.code);
+                        // ..
+                      });
+                  }}
                   fullWidth
                   variant="contained"
                   color="primary"

@@ -12,6 +12,7 @@ import blog3 from "./Pages/blogs/blogpages/blog3";
 import blog2 from "./Pages/blogs/blogpages/blog2";
 import ForSaleOwnerPage from "./Pages/fbsopage/ForSaleOwnerPage";
 import ForgotpassPage from "./Pages/Forgotpass/ForgotpassPage";
+
 export default function BasePage() {
   // useEffect(() => {
   //   console.log('Base page');
@@ -23,9 +24,10 @@ export default function BasePage() {
       <Switch>
         {
           /* Redirect from root URL to /dashboard. */
-          <Redirect exact from="/" to="/homepage" />
+          <Redirect exact from="/" to="/home" />
         }
-        <Route path="/homepage" component={HomePage} />
+
+        <Route path="/home" component={HomePage} />
         <Route path="/faqs" component={FaqsPage} />
         <Route path="/fbso" component={ForSaleOwnerPage} />
         <Route path="/siginup" component={SignupPage} />

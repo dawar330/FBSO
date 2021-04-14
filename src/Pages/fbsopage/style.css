@@ -5,6 +5,28 @@
   top: 104px;
   width: 213px;
 }
+.for-sale-by-owner-faq {
+  align-items: flex-end;
+  display: flex;
+  height: 72px;
+  margin-right: 51px;
+
+  width: 100%;
+}
+.overlap-group-faqs {
+  align-items: flex-start;
+  background-color: var(--mercury);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 67px;
+  width: 1680px;
+  padding: 12px 11px;
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .basic-fsbo-package {
   left: 33px;
   letter-spacing: 0px;
@@ -90,9 +112,9 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 3070px;
+  height: 100%;
   overflow: hidden;
-  width: 1689px;
+  width: 100%;
 }
 .frame-40 {
   align-items: flex-start;

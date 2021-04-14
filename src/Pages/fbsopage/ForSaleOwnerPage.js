@@ -1,6 +1,21 @@
 import React from "react";
+import CustomizedAccordions from "../../Components/CustomizedAccordions";
 import "./style.css";
 function Forsalebyowner() {
+  const Faqs = {
+    questions: [
+      "Q: The result is of such an episodic kind. It's hard to measure when anyone might do it once a decade. How can you scale where a client will turn up every 10 years?",
+      "Q: I have a tendency against B2B, so is there a chance to help new real estate brokers on board your platform?",
+      "Q: How much do you owe the customer?",
+      "Q: What's to deter rivals from seeing how well this performs and then replicating it?",
+    ],
+    answers: [
+      "It's safe to say that the average home buyer buys every 13 years, but there are owners and home sellers who sell every two or three years.",
+      "It gives real estate brokers a little bit of money. However, we agree that users should be aware of the disclosures and know where they are in the chain rather than relying on the agent.",
+      "On the vendor side, we provide free basic products that provide the majority of the utilities provided by rivals. We charge for the right to close the remaining four stages. The initial investment is $399, with a performance fee of $699.",
+      "The agent site is where they make money. They would be jeopardising their cash cow if they entered the consumer market.",
+    ],
+  };
   return (
     <div className="for-sale-owner-page">
       <div className="pricing-page-header">
@@ -282,6 +297,16 @@ function Forsalebyowner() {
             an agent.
           </div>
         </div>
+      </div>
+
+      <div className="overlap-group-faqs border-1px-quill-gray">
+        <div className="text- valign-text-middle mulish-bold-black-25px">
+          For Sale By Owner (FSBO) FAQ
+        </div>
+      </div>
+
+      <div className="fa-qs-panel">
+        <CustomizedAccordions Faqs={Faqs} />
       </div>
     </div>
   );

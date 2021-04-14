@@ -5,15 +5,39 @@
  * components (e.g: `src/app/modules/Auth/pages/AuthPage`, `src/app/BasePage`).
  */
 
-import React from "react";
+import React, { useState, shallowEqual } from "react";
+import { Switch } from "react-router";
 import BasePage from "./BasePage";
-
+import firebase, { db } from "./firebase/config";
 import Layout from "./Pages/layout/Layout";
+import LoggedInLayout from "./Pages/layout/loggedInLayout";
+import SellerBasePage from "./SellerBasePage";
 
 export function Routes() {
+  const [isAuth, setisAuth] = useState(false);
+  const [user, setuser] = useState();
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      db.collection("users")
+        .doc(user.uid)
+        .onSnapshot((doc) => {
+          setuser(doc.data());
+        });
+
+      setisAuth(true);
+    } else {
+      setisAuth(false);
+    }
+  });
   return (
-    <Layout>
-      <BasePage />
-    </Layout>
+    <Switch>
+      {!isAuth ? (
+        <Layout>
+          <BasePage />
+        </Layout>
+      ) : (
+        <LoggedInLayout user={user} />
+      )}
+    </Switch>
   );
 }
