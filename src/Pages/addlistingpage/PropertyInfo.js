@@ -179,7 +179,7 @@ export default function PropertyInfo() {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="AskingPrice"
+            id=""
             name="AskingPrice"
             label="Asking Price"
             fullWidth
