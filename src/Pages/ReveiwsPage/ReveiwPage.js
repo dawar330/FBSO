@@ -1,153 +1,157 @@
 import React from "react";
 import "./style.css";
-
-export default ReviewPage;
-
-function ReviewPage(props) {
-  const {
-    x11,
-    vector15,
-    rectangle63,
-    rectangle62,
-    whatCustomerLike,
-    number,
-    vector20,
-    fastListing,
-    address,
-    vector21,
-    number2,
-    text12,
-    address2,
-    number3,
-    vector22,
-    fastListing2,
-    address3,
-    number4,
-    vector23,
-    fastListing3,
-    address4,
-    number5,
-    vector24,
-    fastListing4,
-    address5,
-    text13,
-    vector25,
-    rectangle29,
-    text14,
-    vector26,
-    text15,
-    reviewHeaderProps,
-    reveiwProps,
-    reveiw2Props,
-    reveiw2Props2,
-    howToVideosProps,
-  } = ReviewsPageData;
-
+function ReveiwPage() {
   return (
     <div className="reviews-page">
-      <div className="overlap-group">
-        <img className="x1-1" src={x11} />
-        <img className="vector-15" src={vector15} />
-        <ReviewHeader {...reviewHeaderProps} />
+      <div className="reoverlap-group-3">
+        <img
+          className="x1-1"
+          src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/1-1@2x.png"
+        />
+        <img
+          className="revector-15"
+          src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-15@1x.png"
+        />
+        <ReviewHeader {...reviewHeaderData} />
       </div>
-      <div className="flex-row-6">
+      <div className="reflex-row-10">
         <div className="review-container">
-          <Reveiw {...reveiwProps} />
-          <div className="overlap-group6">
-            <Reveiw2 {...reveiw2Props} />
-            <img className="rectangle-63" src={rectangle63} />
+          <Reveiw {...reveiwData} />
+          <div className="reoverlap-group6">
+            <Reveiw2 {...reveiw2Data} />
+            <img
+              className="rerectangle-63"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/rectangle-63@2x.png"
+            />
           </div>
-          <div className="overlap-group7">
-            <Reveiw3 {...reveiw2Props2} />
-            <img className="rectangle-62-1" src={rectangle62} />
+          <div className="reoverlap-group7">
+            <Reveiw3 {...reveiw3Data} />
+            <img
+              className="rerectangle-62-1"
+              src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/rectangle-62@2x.png"
+            />
           </div>
         </div>
-        <div className="side-bar">
-          <div className="what-customer-like-1">
-            <div className="what-customer-like valign-text-middle">
-              {whatCustomerLike}
+        <div className="reside-bar">
+          <div className="what-customer-like">
+            <div className="what-customer-like-1 revalign-retext-middle mulish-bold-black-20px">
+              What customer like
             </div>
-            <div className="overlap-group1-2 border-1px-silver">
-              <div className="number-1 valign-text-middle mulish-bold-black-25px">
-                {number}
+            <div className="reoverlap-group1-4 border-1px-silver">
+              <div className="number-1 revalign-retext-middle remulish-bold-black-25px">
+                1
               </div>
-              <img className="vector-2" src={vector20} />
-              <div className="fast-listing valign-text-middle mulish-regular-normal-black-25px">
-                {fastListing}
+              <img
+                className="revector-2"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-20@2x.png"
+              />
+              <div className="fast-listing revalign-retext-middle mulish-normal-black-25px">
+                Fast Listing
               </div>
-              <div className="address-3 valign-text-middle mulish-bold-gunsmoke-15px">
-                {address}
-              </div>
-            </div>
-            <div className="overlap-group3-1">
-              <div className="rectangle-24 border-1px-silver"></div>
-              <img className="vector-21" src={vector21} />
-              <div className="number valign-text-middle mulish-bold-black-25px">
-                {number2}
-              </div>
-              <div className="text-12 valign-text-middle">{text12}</div>
-              <div className="address-4 valign-text-middle mulish-bold-gunsmoke-15px">
-                {address2}
+              <div className="address-7 revalign-retext-middle mulish-bold-gunsmoke-15px">
+                102 votes
               </div>
             </div>
-            <div className="overlap-group5-1 border-1px-silver">
-              <div className="number-1 valign-text-middle mulish-bold-black-25px">
-                {number3}
+            <div className="reoverlap-group3-1">
+              <div className="rerectangle-24 border-1px-silver"></div>
+              <img
+                className="revector-21"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-20@2x.png"
+              />
+              <div className="number revalign-retext-middle remulish-bold-black-25px">
+                2
               </div>
-              <img className="vector-2" src={vector22} />
-              <div className="fast-listing valign-text-middle mulish-regular-normal-black-25px">
-                {fastListing2}
+              <div className="retext-12 revalign-retext-middle">
+                Easy To Complete Documents
               </div>
-              <div className="address-3 valign-text-middle mulish-bold-gunsmoke-15px">
-                {address3}
-              </div>
-            </div>
-            <div className="overlap-group2-2 border-1px-silver">
-              <div className="number-1 valign-text-middle mulish-bold-black-25px">
-                {number4}
-              </div>
-              <img className="vector-2" src={vector23} />
-              <div className="fast-listing valign-text-middle mulish-regular-normal-black-25px">
-                {fastListing3}
-              </div>
-              <div className="address-3 valign-text-middle mulish-bold-gunsmoke-15px">
-                {address4}
+              <div className="address-8 revalign-retext-middle mulish-bold-gunsmoke-15px">
+                102 votes
               </div>
             </div>
-            <div className="overlap-group4 border-1px-silver">
-              <div className="number-1 valign-text-middle mulish-bold-black-25px">
-                {number5}
+            <div className="reoverlap-group5-3 border-1px-silver">
+              <div className="number-1 revalign-retext-middle remulish-bold-black-25px">
+                3
               </div>
-              <img className="vector-2" src={vector24} />
-              <div className="fast-listing valign-text-middle mulish-regular-normal-black-25px">
-                {fastListing4}
+              <img
+                className="revector-2"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-20@2x.png"
+              />
+              <div className="fast-listing revalign-retext-middle mulish-normal-black-25px">
+                Fast Listing
               </div>
-              <div className="address-3 valign-text-middle mulish-bold-gunsmoke-15px">
-                {address5}
+              <div className="address-7 revalign-retext-middle mulish-bold-gunsmoke-15px">
+                102 votes
+              </div>
+            </div>
+            <div className="reoverlap-group2-4 border-1px-silver">
+              <div className="number-1 revalign-retext-middle remulish-bold-black-25px">
+                4
+              </div>
+              <img
+                className="revector-2"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-20@2x.png"
+              />
+              <div className="fast-listing revalign-retext-middle mulish-normal-black-25px">
+                Fast Listing
+              </div>
+              <div className="address-7 revalign-retext-middle mulish-bold-gunsmoke-15px">
+                102 votes
+              </div>
+            </div>
+            <div className="reoverlap-group4-2 border-1px-silver">
+              <div className="number-1 revalign-retext-middle remulish-bold-black-25px">
+                5
+              </div>
+              <img
+                className="revector-2"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-20@2x.png"
+              />
+              <div className="fast-listing revalign-retext-middle mulish-normal-black-25px">
+                Fast Listing
+              </div>
+              <div className="address-7 revalign-retext-middle mulish-bold-gunsmoke-15px">
+                102 votes
               </div>
             </div>
           </div>
           <div className="business-transparency">
-            <div className="overlap-group6-1 border-1px-iron">
-              <div className="text-13 valign-text-middle mulish-bold-black-25px">
-                {text13}
+            <div className="reoverlap-group6-1">
+              <div className="retext-13 revalign-retext-middle remulish-bold-black-25px">
+                Business Transparency
               </div>
-              <img className="vector-25" src={vector25} />
-              <div className="flex-row-8">
-                <img className="rectangle-29" src={rectangle29} />
-                <div className="text-14 valign-text-middle">{text14}</div>
+              <img
+                className="revector-25"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-25@2x.png"
+              />
+              <div className="reflex-row-11">
+                <img
+                  className="rerectangle-29"
+                  src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/rectangle-29@2x.png"
+                />
+                <div className="retext-14 revalign-retext-middle mulish-normal-black-18px">
+                  Starting October 2020, Houzeo asks all of their customers to
+                  rate their experience.
+                </div>
               </div>
-              <img className="vector-26" src={vector26} />
-              <div className="text-15 valign-text-middle">{text15}</div>
+              <img
+                className="revector-26"
+                src="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-25@2x.png"
+              />
+              <div className="retext-15 revalign-retext-middle mulish-normal-black-18px">
+                To calculate the overall star rating and percentage breakdown by
+                star, we don’t use a simple average. Instead, our system
+                considers things like how recent a review is and analyzes
+                reviews to verify trustworthiness.
+              </div>
             </div>
           </div>
-          <div className="how-to-videos">
+          <div className="how-to-videos-1">
             <HowToVideos
-              text16={howToVideosProps.text16}
-              text18={howToVideosProps.text18}
-              text19={howToVideosProps.text19}
-              text20={howToVideosProps.text20}
-              videoTag2Props={howToVideosProps.videoTag2Props}
+              text16="How To Videos"
+              text18="How to List Your Hone on the MLS For Sale By Owner (FSBO)"
+              text19="How to Change Your MLSListing Including Adding Open Houses...All Online!"
+              text20="How to Select a Settlement Agent - Attorney, Escrow, Title"
+              videoTag4Props={howToVideosData.videoTag4Props}
             />
           </div>
         </div>
@@ -155,6 +159,8 @@ function ReviewPage(props) {
     </div>
   );
 }
+
+export default ReveiwPage;
 
 function ReviewHeader(props) {
   const {
@@ -171,26 +177,30 @@ function ReviewHeader(props) {
 
   return (
     <div className="review-header">
-      <h1 className="text-1 valign-text-middle">{text1}</h1>
-      <div className="text-2 valign-text-middle">{text2}</div>
-      <div className="flex-row-7">
-        <div className="overlap-group2-1">
+      <h1 className="retext-1 revalign-retext-middle">{text1}</h1>
+      <div className="retext-2 revalign-retext-middle mulish-normal-granite-gray-20px">
+        {text2}
+      </div>
+      <div className="reflex-row">
+        <div className="reoverlap-group2">
           <img className="star-" src={star1} />
         </div>
-        <div className="overlap-group3">
+        <div className="reoverlap-group3">
           <img className="star-" src={star2} />
         </div>
-        <div className="overlap-group5">
+        <div className="reoverlap-group5">
           <img className="star-" src={star3} />
         </div>
-        <div className="overlap-group4-1">
+        <div className="reoverlap-group4">
           <img className="star-" src={star4} />
         </div>
-        <div className="overlap-group1">
+        <div className="reoverlap-group1">
           <img className="star-5" src={star5} />
         </div>
-        <img className="vector-17" src={vector17} />
-        <div className="address valign-text-middle">{address}</div>
+        <img className="revector-17" src={vector17} />
+        <div className="address revalign-retext-middle mulish-normal-granite-gray-20px">
+          {address}
+        </div>
       </div>
     </div>
   );
@@ -199,6 +209,8 @@ function ReviewHeader(props) {
 function Reveiw(props) {
   const {
     rectangle62,
+    afaqAhmed,
+    homeSeller,
     rectangle22,
     address,
     address2,
@@ -213,63 +225,66 @@ function Reveiw(props) {
     spanText,
     spanText2,
     spanText3,
-    frame6Props,
   } = props;
 
   return (
     <div className="reveiw">
-      <div className="overlap-group1-1 border-1px-boulder">
-        <div className="flex-col">
-          <div className="flex-row-4">
-            <img className="rectangle-62" src={rectangle62} />
-            <Frame6
-              afaqAhmed={frame6Props.afaqAhmed}
-              homeSeller={frame6Props.homeSeller}
-            />
-            <img className="rectangle-22" src={rectangle22} />
-            <div className="overlap-group2">
-              <div className="address-1 valign-text-middle mulish-regular-normal-black-12px">
+      <div className="reoverlap-group1-1 border-1px-boulder">
+        <div className="reflex-col">
+          <div className="reflex-row-1">
+            <img className="rerectangle-62" src={rectangle62} />
+            <div className="frame-6">
+              <div className="afaq-ahmed revalign-retext-middle roboto-bold-black-14px">
+                {afaqAhmed}
+              </div>
+              <div className="home-seller revalign-retext-middle mulish-normal-granite-gray-12px">
+                {homeSeller}
+              </div>
+            </div>
+            <img className="rerectangle-22" src={rectangle22} />
+            <div className="reoverlap-group2-1">
+              <div className="address-1 revalign-retext-middle mulish-normal-black-12px">
                 {address}
               </div>
-              <div className="address-2 valign-text-middle mulish-regular-normal-black-12px">
+              <div className="address-2 revalign-retext-middle mulish-normal-black-12px">
                 {address2}
               </div>
-              <p className="text- valign-text-middle mulish-regular-normal-granite-gray-10px">
+              <p className="retext-3 revalign-retext-middle mulish-normal-granite-gray-10px">
                 {text3}
               </p>
             </div>
           </div>
-          <img className="vector-19" src={vector19} />
+          <img className="revector-19" src={vector19} />
         </div>
-        <div className="flex-row-1">
-          <div className="overlap-group-1">
-            <div className="rectangle-17"></div>
+        <div className="reflex-row-2">
+          <div className="reoverlap-group8">
+            <div className="rerectangle-17"></div>
             <img className="star-6" src={star6} />
           </div>
-          <div className="overlap-group-2">
-            <div className="rectangle-18"></div>
+          <div className="reoverlap-group9">
+            <div className="rerectangle-18"></div>
             <img className="star--1" src={star7} />
           </div>
-          <div className="overlap-group-3">
-            <div className="rectangle-"></div>
+          <div className="reoverlap-group">
+            <div className="rerectangle-"></div>
             <img className="star--2" src={star8} />
           </div>
-          <div className="overlap-group-3">
-            <div className="rectangle-"></div>
+          <div className="reoverlap-group">
+            <div className="rerectangle-"></div>
             <img className="star--1" src={star9} />
           </div>
-          <div className="overlap-group-3">
-            <div className="rectangle-"></div>
+          <div className="reoverlap-group">
+            <div className="rerectangle-"></div>
             <img className="star--2" src={star10} />
           </div>
-          <p className="text--1 valign-text-middle mulish-regular-normal-boulder-10px">
+          <p className="retext-5 revalign-retext-middle mulish-normal-boulder-10px">
             {text5}
           </p>
         </div>
-        <div className="text-4 valign-text-middle roboto-bold-white-20px">
+        <div className="retext-4 revalign-retext-middle roboto-bold-white-20px">
           <span>
-            <span className="span">{spanText}</span>
-            <span className="span-1">{spanText2}</span>
+            <span className="span0">{spanText}</span>
+            <span className="span1">{spanText2}</span>
             <span className="span2">{spanText3}</span>
           </span>
         </div>
@@ -278,23 +293,10 @@ function Reveiw(props) {
   );
 }
 
-function Frame6(props) {
-  const { afaqAhmed, homeSeller } = props;
-
-  return (
-    <div className="frame-6">
-      <div className="afaq-ahmed valign-text-middle roboto-bold-black-14px">
-        {afaqAhmed}
-      </div>
-      <div className="home-seller valign-text-middle mulish-regular-normal-granite-gray-12px">
-        {homeSeller}
-      </div>
-    </div>
-  );
-}
-
 function Reveiw2(props) {
   const {
+    afaqAhmedI169549,
+    text6,
     rectangle22,
     address,
     address2,
@@ -309,63 +311,66 @@ function Reveiw2(props) {
     spanText,
     spanText2,
     spanText3,
-    frame62Props,
   } = props;
 
   return (
     <div className="reveiw-1">
-      <div className="overlap-group1-1 border-1px-boulder">
-        <div className="flex-col-1">
-          <div className="flex-row-2">
-            <Frame62
-              afaqAhmedI169549={frame62Props.afaqAhmedI169549}
-              text6={frame62Props.text6}
-            />
-            <img className="rectangle-22-1" src={rectangle22} />
-            <div className="overlap-group-4">
-              <div className="address-1 valign-text-middle mulish-regular-normal-black-12px">
+      <div className="reoverlap-group1-2 border-1px-boulder">
+        <div className="reflex-col-1">
+          <div className="reflex-row-3">
+            <div className="frame-6-1">
+              <div className="afaq-ahmed-i169549 revalign-retext-middle roboto-bold-black-14px">
+                {afaqAhmedI169549}
+              </div>
+              <div className="retext-6 revalign-retext-middle mulish-normal-granite-gray-12px">
+                {text6}
+              </div>
+            </div>
+            <img className="rerectangle-22-1" src={rectangle22} />
+            <div className="reoverlap-group2-2">
+              <div className="address-4 revalign-retext-middle mulish-normal-black-12px">
                 {address}
               </div>
-              <div className="address-2 valign-text-middle mulish-regular-normal-black-12px">
+              <div className="address-3 revalign-retext-middle mulish-normal-black-12px">
                 {address2}
               </div>
-              <p className="text- valign-text-middle mulish-regular-normal-granite-gray-10px">
+              <p className="retext-7 revalign-retext-middle mulish-normal-granite-gray-10px">
                 {text7}
               </p>
             </div>
           </div>
-          <img className="vector-19-1" src={vector19} />
+          <img className="revector-19-1" src={vector19} />
         </div>
-        <div className="flex-row-1">
-          <div className="overlap-group-1">
-            <div className="rectangle-17"></div>
-            <img className="star-6" src={star6} />
+        <div className="reflex-row-4">
+          <div className="reoverlap-group9-1">
+            <div className="rerectangle-17-1"></div>
+            <img className="star-6-1" src={star6} />
           </div>
-          <div className="overlap-group-2">
-            <div className="rectangle-18"></div>
-            <img className="star--1" src={star7} />
+          <div className="reoverlap-group5-1">
+            <div className="rerectangle-18-1"></div>
+            <img className="star--3" src={star7} />
           </div>
-          <div className="overlap-group-3">
-            <div className="rectangle-"></div>
-            <img className="star--2" src={star8} />
+          <div className="reoverlap-group-1">
+            <div className="rerectangle--1"></div>
+            <img className="star--4" src={star8} />
           </div>
-          <div className="overlap-group-3">
-            <div className="rectangle-"></div>
-            <img className="star--1" src={star9} />
+          <div className="reoverlap-group-1">
+            <div className="rerectangle--1"></div>
+            <img className="star--3" src={star9} />
           </div>
-          <div className="overlap-group-3">
-            <div className="rectangle-"></div>
-            <img className="star--2" src={star10} />
+          <div className="reoverlap-group-1">
+            <div className="rerectangle--1"></div>
+            <img className="star--4" src={star10} />
           </div>
-          <p className="text--1 valign-text-middle mulish-regular-normal-boulder-10px">
+          <p className="retext-8 revalign-retext-middle mulish-normal-boulder-10px">
             {text8}
           </p>
         </div>
-        <div className="fsbopk-was-very-sim valign-text-middle roboto-bold-white-20px">
+        <div className="fsbopk-was-very-sim revalign-retext-middle roboto-bold-white-20px">
           <span>
-            <span className="span">{spanText}</span>
-            <span className="span-1">{spanText2}</span>
-            <span className="span2">{spanText3}</span>
+            <span className="span0-1">{spanText}</span>
+            <span className="span1-1">{spanText2}</span>
+            <span className="span2-1">{spanText3}</span>
           </span>
         </div>
       </div>
@@ -373,23 +378,10 @@ function Reveiw2(props) {
   );
 }
 
-function Frame62(props) {
-  const { afaqAhmedI169549, text6 } = props;
-
-  return (
-    <div className="frame-6-2">
-      <div className="afaq-ahmed-i169549 valign-text-middle roboto-bold-black-14px">
-        {afaqAhmedI169549}
-      </div>
-      <div className="text-6 valign-text-middle mulish-regular-normal-granite-gray-12px">
-        {text6}
-      </div>
-    </div>
-  );
-}
-
 function Reveiw3(props) {
   const {
+    afaqAhmedI169573,
+    text9,
     rectangle22,
     address,
     address2,
@@ -406,63 +398,66 @@ function Reveiw3(props) {
     spanText3,
     spanText4,
     spanText5,
-    frame63Props,
   } = props;
 
   return (
-    <div className="reveiw-1">
-      <div className="overlap-group1-1 border-1px-boulder">
-        <div className="flex-col-1">
-          <div className="flex-row-2">
-            <Frame63
-              afaqAhmedI169573={frame63Props.afaqAhmedI169573}
-              text9={frame63Props.text9}
-            />
-            <img className="rectangle-22-2" src={rectangle22} />
-            <div className="overlap-group-4">
-              <div className="address-1 valign-text-middle mulish-regular-normal-black-12px">
+    <div className="reveiw-2">
+      <div className="reoverlap-group1-3 border-1px-boulder">
+        <div className="reflex-col-2">
+          <div className="reflex-row-6">
+            <div className="frame-6-2">
+              <div className="afaq-ahmed-i169573 revalign-retext-middle roboto-bold-black-14px">
+                {afaqAhmedI169573}
+              </div>
+              <div className="retext-9 revalign-retext-middle mulish-normal-granite-gray-12px">
+                {text9}
+              </div>
+            </div>
+            <img className="rerectangle-22-2" src={rectangle22} />
+            <div className="reoverlap-group4-1">
+              <div className="address-5 revalign-retext-middle mulish-normal-black-12px">
                 {address}
               </div>
-              <div className="address-2 valign-text-middle mulish-regular-normal-black-12px">
+              <div className="address-6 revalign-retext-middle mulish-normal-black-12px">
                 {address2}
               </div>
-              <p className="text- valign-text-middle mulish-regular-normal-granite-gray-10px">
+              <p className="retext-10 revalign-retext-middle mulish-normal-granite-gray-10px">
                 {text10}
               </p>
             </div>
           </div>
-          <img className="vector-19-1" src={vector19} />
+          <img className="revector-19-2" src={vector19} />
         </div>
-        <div className="flex-row-1">
-          <div className="overlap-group-1">
-            <div className="rectangle-17"></div>
-            <img className="star-6" src={star6} />
+        <div className="reflex-row-5">
+          <div className="reoverlap-group2-3">
+            <div className="rerectangle-17-2"></div>
+            <img className="star-6-2" src={star6} />
           </div>
-          <div className="overlap-group-2">
-            <div className="rectangle-18"></div>
-            <img className="star--1" src={star7} />
+          <div className="reoverlap-group5-2">
+            <div className="rerectangle-18-2"></div>
+            <img className="star--5" src={star7} />
           </div>
-          <div className="overlap-group-3">
-            <div className="rectangle-"></div>
-            <img className="star--2" src={star8} />
+          <div className="reoverlap-group-2">
+            <div className="rerectangle--2"></div>
+            <img className="star--6" src={star8} />
           </div>
-          <div className="overlap-group-3">
-            <div className="rectangle-"></div>
-            <img className="star--1" src={star9} />
+          <div className="reoverlap-group-2">
+            <div className="rerectangle--2"></div>
+            <img className="star--5" src={star9} />
           </div>
-          <div className="overlap-group-3">
-            <div className="rectangle-"></div>
-            <img className="star--2" src={star10} />
+          <div className="reoverlap-group-2">
+            <div className="rerectangle--2"></div>
+            <img className="star--6" src={star10} />
           </div>
-          <p className="text--1 valign-text-middle mulish-regular-normal-boulder-10px">
+          <p className="retext-11 revalign-retext-middle mulish-normal-boulder-10px">
             {text11}
           </p>
         </div>
-        <div className="fsbopk-was-very-sim valign-text-middle roboto-bold-white-20px">
+        <div className="fsbopk-was-very-sim-1 revalign-retext-middle roboto-bold-white-20px">
           <span>
             <span className="span">{spanText}</span>
             <span className="span-1">{spanText2}</span>
-            <span className="span2">{spanText3}</span>
+            <span className="span2-2">{spanText3}</span>
             <span className="span">{spanText4}</span>
             <span className="span-1">{spanText5}</span>
           </span>
@@ -472,32 +467,17 @@ function Reveiw3(props) {
   );
 }
 
-function Frame63(props) {
-  const { afaqAhmedI169573, text9 } = props;
-
-  return (
-    <div className="frame-6-1">
-      <div className="afaq-ahmed-i169573 valign-text-middle roboto-bold-black-14px">
-        {afaqAhmedI169573}
-      </div>
-      <div className="text-9 valign-text-middle mulish-regular-normal-granite-gray-12px">
-        {text9}
-      </div>
-    </div>
-  );
-}
-
 function HowToVideos(props) {
-  const { text16, text18, text19, text20, videoTag2Props } = props;
+  const { text16, text18, text19, text20, videoTag4Props } = props;
 
   return (
-    <div className="how-to-videos-1">
-      <div className="text-16 valign-text-middle mulish-bold-black-25px">
+    <div className="how-to-videos">
+      <div className="retext-16 revalign-retext-middle remulish-bold-black-25px">
         {text16}
       </div>
-      <VideoTag2>{videoTag2Props.children}</VideoTag2>
-      <div className="flex-row">
-        <div className="rectangle-3">
+      <VideoTag4>{videoTag4Props.children}</VideoTag4>
+      <div className="reflex-row-8">
+        <div className="rerectangle-31">
           <iframe
             style={{ border: 0 }}
             id="ytplayer"
@@ -513,12 +493,12 @@ function HowToVideos(props) {
             webkitallowfullscreen="webkitallowfullscreen"
           ></iframe>
         </div>
-        <p className="text-18 valign-text-middle roboto-regular-normal-black-15px">
+        <p className="retext-18 revalign-retext-middle roboto-normal-black-15px">
           {text18}
         </p>
       </div>
-      <div className="flex-row-3">
-        <div className="rectangle-3">
+      <div className="reflex-row-9">
+        <div className="rerectangle-3">
           <iframe
             style={{ border: 0 }}
             id="ytplayer"
@@ -534,12 +514,12 @@ function HowToVideos(props) {
             webkitallowfullscreen="webkitallowfullscreen"
           ></iframe>
         </div>
-        <p className="text-19 valign-text-middle roboto-regular-normal-black-15px">
+        <p className="retext-19 revalign-retext-middle roboto-normal-black-15px">
           {text19}
         </p>
       </div>
-      <div className="flex-row-5">
-        <div className="rectangle-3">
+      <div className="reflex-row-7">
+        <div className="rerectangle-3">
           <iframe
             style={{ border: 0 }}
             id="ytplayer"
@@ -555,7 +535,7 @@ function HowToVideos(props) {
             webkitallowfullscreen="webkitallowfullscreen"
           ></iframe>
         </div>
-        <p className="text--2 valign-text-middle roboto-regular-normal-black-15px">
+        <p className="retext-20 revalign-retext-middle roboto-normal-black-15px">
           {text20}
         </p>
       </div>
@@ -563,12 +543,12 @@ function HowToVideos(props) {
   );
 }
 
-function VideoTag2(props) {
+function VideoTag4(props) {
   const { children } = props;
 
   return (
     <div className="video-tag-2">
-      <div className="rectangle-3">
+      <div className="rerectangle-30">
         <iframe
           style={{ border: 0 }}
           id="ytplayer"
@@ -584,55 +564,61 @@ function VideoTag2(props) {
           webkitallowfullscreen="webkitallowfullscreen"
         ></iframe>
       </div>
-      <p className="text--2 valign-text-middle roboto-regular-normal-black-15px">
+      <p className="retext-17 revalign-retext-middle roboto-normal-black-15px">
         {children}
       </p>
     </div>
   );
 }
+
+const videoTag4Data = {
+  children: "How to submit & Review Offer on Houzeo.com",
+};
+
+const howToVideosData = {
+  videoTag4Props: videoTag4Data,
+};
+
 const reviewHeaderData = {
   text1: "Houzeo Reviews & Testimonials",
   text2: "Overall Satisfaction Rating",
   star1:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-1@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-1@2x.png",
   star2:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-1@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-1@2x.png",
   star3:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-1@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-1@2x.png",
   star4:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-1@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-1@2x.png",
   star5:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/star-5@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-5@2x.png",
   vector17:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-17-1@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-17@2x.png",
   address: "500 Reviews",
-};
-
-const frame6Data = {
-  afaqAhmed: "Afaq Ahmed",
-  homeSeller: "Home Seller",
 };
 
 const reveiwData = {
   rectangle62:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606998b6ab2c12180fafb74a/img/rectangle-62@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/rectangle-62-1@2x.png",
+  afaqAhmed: "Afaq Ahmed",
+  homeSeller: "Home Seller",
   rectangle22:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/rectangle-22@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/rectangle-22@2x.png",
   address: "121 McMurray Cir,",
   address2: "Nashville, TN 37211",
   text3: "Listed on Feb 22, 2021",
   vector19:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/vector-19@1x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-19@1x.png",
   star6:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-6@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-6@2x.png",
   star7:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   star8:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   star9:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   star10:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   text5: "Original review: Mar 1, 2021",
   spanText: "FSBO.pk",
   spanText2: " ",
@@ -645,32 +631,28 @@ const reveiwData = {
       <br />
     </>
   ),
-  frame6Props: frame6Data,
-};
-
-const frame62Data = {
-  afaqAhmedI169549: "Kinza wali",
-  text6: "Home Seller",
 };
 
 const reveiw2Data = {
+  afaqAhmedI169549: "Kinza wali",
+  text6: "Home Seller",
   rectangle22:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/rectangle-22@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/rectangle-22@2x.png",
   address: "121 McMurray Cir,",
   address2: "Nashville, TN 37211",
   text7: "Listed on Feb 22, 2021",
   vector19:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/vector-19@1x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-19@1x.png",
   star6:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-6@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-6@2x.png",
   star7:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   star8:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   star9:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   star10:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   text8: "Original review: Mar 1, 2021",
   spanText: "FSBO.pk",
   spanText2: " ",
@@ -684,32 +666,28 @@ const reveiw2Data = {
       part of it was that we had to keep all of our own profits on our offer.
     </>
   ),
-  frame62Props: frame62Data,
-};
-
-const frame63Data = {
-  afaqAhmedI169573: "Badar Khawar",
-  text9: "Home Seller",
 };
 
 const reveiw3Data = {
+  afaqAhmedI169573: "Badar Khawar",
+  text9: "Home Seller",
   rectangle22:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/rectangle-22@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/rectangle-22@2x.png",
   address: "121 McMurray Cir,",
   address2: "Nashville, TN 37211",
   text10: "Listed on Feb 22, 2021",
   vector19:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/vector-19@1x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/vector-19@1x.png",
   star6:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-6@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-6@2x.png",
   star7:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   star8:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   star9:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   star10:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606a10e6b1a8ab69d61ae4c1/img/star-7@2x.png",
+    "https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/607d42aace5af757e330fd12/img/star-7@2x.png",
   text11: "Original review: Mar 1, 2021",
   spanText: "FSBO.pk",
   spanText2: " ",
@@ -728,71 +706,4 @@ const reveiw3Data = {
       . <br />
     </>
   ),
-  frame63Props: frame63Data,
-};
-
-const videoTag2Data = {
-  children: "How to submit & Review Offer on Houzeo.com",
-};
-
-const howToVideosData = {
-  text16: "How To Videos",
-  text18: "How to List Your Hone on the MLS For Sale By Owner (FSBO)",
-  text19:
-    "How to Change Your MLSListing Including Adding Open Houses...All Online!",
-  text20: "How to Select a Settlement Agent - Attorney, Escrow, Title",
-  videoTag2Props: videoTag2Data,
-};
-
-const ReviewsPageData = {
-  x11:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/1-1@2x.png",
-  vector15:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-15-1@1x.png",
-  rectangle63:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/6069d3e5b1a8ab69d61ae44b/img/rectangle-63@2x.png",
-  rectangle62:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/6069d3e5b1a8ab69d61ae44b/img/rectangle-62@2x.png",
-  whatCustomerLike: "What customer like",
-  number: "1",
-  vector20:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-20@2x.png",
-  fastListing: "Fast Listing",
-  address: "102 votes",
-  vector21:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-20@2x.png",
-  number2: "2",
-  text12: "Easy To Complete Documents",
-  address2: "102 votes",
-  number3: "3",
-  vector22:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-20@2x.png",
-  fastListing2: "Fast Listing",
-  address3: "102 votes",
-  number4: "4",
-  vector23:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-20@2x.png",
-  fastListing3: "Fast Listing",
-  address4: "102 votes",
-  number5: "5",
-  vector24:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-20@2x.png",
-  fastListing4: "Fast Listing",
-  address5: "102 votes",
-  text13: "Business Transparency",
-  vector25:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-25@2x.png",
-  rectangle29:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/rectangle-29@2x.png",
-  text14:
-    "Starting October 2020, Houzeo asks all of their customers to rate their experience.",
-  vector26:
-    "https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/vector-25@2x.png",
-  text15:
-    "To calculate the overall star rating and percentage breakdown by star, we don’t use a simple average. Instead, our system considers things like how recent a review is and analyzes reviews to verify trustworthiness.",
-  reviewHeaderProps: reviewHeaderData,
-  reveiwProps: reveiwData,
-  reveiw2Props: reveiw2Data,
-  reveiw2Props2: reveiw3Data,
-  howToVideosProps: howToVideosData,
 };

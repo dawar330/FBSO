@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 function Footer() {
@@ -106,13 +107,23 @@ function Services(props) {
   return (
     <div className="services">
       <div className="services-1 dmsans-bold-white-18px">{services}</div>
-      <div className="email-marketing dmsans-normal-white-14px">
-        {emailMarketing}
-      </div>
-      <div className="campaigns dmsans-normal-white-14px">{campaigns}</div>
-      <div className="branding dmsans-normal-white-14px">{branding}</div>
-      <div className="offline dmsans-normal-white-14px">{offline}</div>
-      <div className="offline dmsans-normal-white-14px">{offline2}</div>
+      <Link to={"/buy"}>
+        {" "}
+        <div className="email-marketing dmsans-normal-white-14px">
+          {emailMarketing}
+        </div>
+      </Link>
+      <Link to={"/pricing"}>
+        <div className="campaigns dmsans-normal-white-14px">{campaigns}</div>
+      </Link>
+      <Link to={"/reviews"}>
+        {" "}
+        <div className="branding dmsans-normal-white-14px">{branding}</div>
+      </Link>
+      <Link to={"/fbso"}>
+        {" "}
+        <div className="offline dmsans-normal-white-14px">{offline}</div>
+      </Link>
     </div>
   );
 }
@@ -136,7 +147,10 @@ function Help(props) {
   return (
     <div className="help">
       <div className="help-1 dmsans-bold-white-18px">{help}</div>
-      <div className="fa-qs dmsans-normal-white-14px">{faqs}</div>
+      <Link to={"/faqs"}>
+        {" "}
+        <div className="fa-qs dmsans-normal-white-14px">{faqs}</div>
+      </Link>
       <div className="contact-us dmsans-normal-white-14px">{contactUs}</div>
     </div>
   );

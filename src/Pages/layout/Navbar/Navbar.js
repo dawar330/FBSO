@@ -13,11 +13,13 @@ function NavBar() {
             spanText2=" "
             spanText3="EST, (Mon To Sat)"
           />
-          <div className="start-listing-button smart-layers-pointers ">
-            <div className="label-2 valign-text-middle mulish-bold-white-12px">
-              Start Free Listing
+          <Link to={"/signin"}>
+            <div className="start-listing-button smart-layers-pointers ">
+              <div className="label-2 valign-text-middle mulish-bold-white-12px">
+                Start Free Listing
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
         <Link to={"/home"}>
           <img

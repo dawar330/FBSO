@@ -192,9 +192,7 @@ function AddlistingPage(props) {
           </Grid>
         </Grid>
 
-        <Typography variant="h6" gutterBottom gutterTop>
-          Primary Contact Info
-        </Typography>
+        <Typography variant="h6">Primary Contact Info</Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={3}>
             <InputField name="FirstName" label="First Name" type="text" />
@@ -209,9 +207,7 @@ function AddlistingPage(props) {
             <MuiPhoneNumber defaultCountry={"pk"} onChange={handleOnChange} />
           </Grid>{" "}
         </Grid>
-        <Typography variant="h6" gutterBottom gutterTop>
-          Deed Info
-        </Typography>
+        <Typography variant="h6">Deed Info</Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={3}>
             <InputField name="deedowner" label="Deed Onwer" type="text" />
@@ -234,7 +230,7 @@ function AddlistingPage(props) {
           <Grid item xs={12} sm={3}>
             <input
               type="file"
-              class="form-control"
+              className="form-control"
               multiple
               onChange={onChangeHandler}
             />
