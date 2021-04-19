@@ -263,13 +263,14 @@
 }
 .side-bar {
   align-items: flex-start;
-  background-size: 100% 100%;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   height: 988px;
   overflow: hidden;
   padding: 67px 0;
   width: 384px;
+  position: sticky;
 }
 .loggedintext- {
   height: 36px;
@@ -371,7 +372,7 @@
   background-color: var(--white);
   display: flex;
   overflow: hidden;
-  width: 1469px;
+  height: 5000px;
 }
 .loggedaddress {
   height: 36px;
