@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./style.css";
 
 function NavBar() {
@@ -19,11 +19,13 @@ function NavBar() {
             </div>
           </div>
         </div>
-        <img
-          alt="logo"
-          className="rectangle-34"
-          src="https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/rectangle-34@2x.png"
-        />
+        <Link to={"/home"}>
+          <img
+            alt="logo"
+            className="rectangle-34"
+            src="https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/604a2073862f1d3cd3adbea6/img/rectangle-34@2x.png"
+          />
+        </Link>
         <div className="links">
           <div className="buy valign-text-middle mulish-semi-bold-cape-cod-14px  ">
             <NavLink style={{ textDecoration: "none" }} to={"/buy"}>

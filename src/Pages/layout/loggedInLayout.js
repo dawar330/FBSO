@@ -2,8 +2,42 @@ import firebase from "../../firebase/config";
 import React, { useState } from "react";
 import AddlistingPage from "../addlistingpage/AddlistingPage";
 import "./loggedinstyle.css";
+import ProfilePage from "../ProfilePage";
 
 function LoggedInLayout(props) {
+  const uid = firebase.auth().currentUser.uid;
+  const [listings, setlistings] = useState([]);
+  const [user, setuser] = useState();
+  React.useEffect(() => {
+    firebase
+      .firestore()
+      .collection("Listings")
+      .where("uid", "==", uid)
+      .onSnapshot((querySnapshot) => {
+        const items = [];
+        querySnapshot.forEach((doc) => {
+          items.push({ ...doc.data(), ID: doc.id });
+        });
+        setlistings(items);
+      });
+
+    firebase
+      .firestore()
+      .collection("users")
+      .doc(uid)
+      .get()
+      .then(function (doc) {
+        if (doc.exists) {
+          setuser({ ...doc.data(), ID: doc.id });
+        } else {
+          // doc.data() will be undefined in this case
+          console.log("No such document!");
+        }
+      })
+      .catch(function (error) {
+        console.log("Error getting document:", error);
+      });
+  }, []);
   const {
     sidebar,
     logoTransparentpng2,
@@ -63,27 +97,39 @@ function LoggedInLayout(props) {
                 {loggedintext1}
               </div>
             </div>
-            <div className="loggeginoverlap-group border-1px-black">
-              <div className="loggeninflex-row-4">
-                <img className="property-image" src={propertyImage} />
-                <p className="loggedaddress loggedinvalign-loggedintext-middle roboto-bold-black-15px">
-                  {loggedaddress}
-                </p>
-                <div className="flex-col">
-                  <img className="exclamation-mark-1" src={exclamationMark1} />
-                  <div className="loggedincomplete-listing loggedinvalign-loggedintext-middle roboto-bold-jelly-bean-10px">
-                    {loggedincompleteListing}
+            {listings &&
+              listings.map((list) => {
+                return (
+                  <div className="loggeginoverlap-group border-1px-black">
+                    <div className="loggeninflex-row-4">
+                      <img className="property-image" src={propertyImage} />
+                      <p className="loggedaddress loggedinvalign-loggedintext-middle roboto-bold-black-15px">
+                        {list.address1}
+                        <br />
+                        {list.address2}
+                      </p>
+
+                      <img
+                        className="register-button-1"
+                        src={registerButton2}
+                      />
+                    </div>
                   </div>
-                </div>
-                <img className="register-button-1" src={registerButton2} />
-              </div>
-            </div>
+                );
+              })}
           </>
         );
       case "addlisting":
         return (
           <>
-            <AddlistingPage />
+            <AddlistingPage setpage={setpage} />
+          </>
+        );
+
+      case "profile":
+        return (
+          <>
+            <ProfilePage />
           </>
         );
 
@@ -99,15 +145,22 @@ function LoggedInLayout(props) {
       >
         <img className="logo-transparentpng-2" src={logoTransparentpng2} />
         <img className="vector-102" src={vector102} />
-        <div className="loggeninflex-row-3">
+        <div
+          className="loggeninflex-row-3"
+          onClick={() => {
+            setpage("profile");
+          }}
+        >
           <div
             className="loggeginoverlap-group4"
             style={{ backgroundImage: `url(${loggeginoverlapGroup4})` }}
           >
-            <h1 className="title roboto-normal-white-70px">{title}</h1>
+            <h1 className="title roboto-normal-white-70px">
+              {user && user.firstname[0]}
+            </h1>
           </div>
           <div className="ahtisham-ejaz roboto-normal-black-32px">
-            {ahtishamEjaz}
+            {user && user.firstname} {user && user.lastname}
           </div>
         </div>
         <img className="vector-103" src={vector103} />
@@ -140,7 +193,7 @@ function LoggedInLayout(props) {
           <div className="rectangle-">
             <iframe
               style={{ border: 0 }}
-              id="ytplayer"
+              id="player"
               type="loggedintext/html"
               width="100%"
               height="100%"
@@ -161,7 +214,7 @@ function LoggedInLayout(props) {
           <div className="rectangle-64">
             <iframe
               style={{ border: 0 }}
-              id="ytplayer"
+              id="yytplayer"
               type="loggedintext/html"
               width="100%"
               height="100%"
@@ -182,7 +235,7 @@ function LoggedInLayout(props) {
           <div className="rectangle-">
             <iframe
               style={{ border: 0 }}
-              id="ytplayer"
+              id="ytrplayer"
               type="loggedintext/html"
               width="100%"
               height="100%"
@@ -203,7 +256,7 @@ function LoggedInLayout(props) {
           <div className="rectangle-">
             <iframe
               style={{ border: 0 }}
-              id="ytplayer"
+              id="ytaplayer"
               type="loggedintext/html"
               width="100%"
               height="100%"

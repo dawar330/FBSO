@@ -1,124 +1,59 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
+import * as Yup from "yup";
+import { Formik, Form } from "formik";
+import { InputField } from "formik-stepper";
 import firebase from "../firebase/config";
-import Avatar from "@material-ui/core/Avatar";
-import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
-import Link from "@material-ui/core/Link";
-import Paper from "@material-ui/core/Paper";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-
-function ProfilePage(props) {
-  const useStyles = makeStyles((theme) => ({
-    root: {
-      height: "100vh",
-    },
-    image: {
-      backgroundImage: "url(https://source.unsplash.com/random)",
-      backgroundRepeat: "no-repeat",
-      backgroundColor:
-        theme.palette.type === "light"
-          ? theme.palette.grey[50]
-          : theme.palette.grey[900],
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    },
-    paper: {
-      margin: theme.spacing(8, 4),
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    },
-    avatar: {
-      margin: theme.spacing(1),
-      backgroundColor: theme.palette.secondary.main,
-    },
-    form: {
-      width: "100%", // Fix IE 11 issue.
-      marginTop: theme.spacing(1),
-    },
-    submit: {
-      margin: theme.spacing(3, 0, 2),
-    },
-  }));
-  const classes = useStyles();
-  const { user } = props;
+function ProfilePage() {
+  const uid = firebase.auth().currentUser.uid;
+  const validationSchema = Yup.object().shape({
+    firstname: Yup.string().required("First Name field is required"),
+    lastname: Yup.string().required("Last Name is required"),
+    Email: Yup.string()
+      .email("The email must be a valid email address.")
+      .required("The Email field is required"),
+  });
   return (
-    <>
-      {user ? (
-        <>
-          <div className={classes.paper}>
-            <Avatar className={classes.avatar}></Avatar>
-            <Typography component="h1" variant="h5">
-              Sign in
-            </Typography>
-            <form className={classes.form} noValidate>
-              {/* <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                fullWidth
-                id="email"
-                value={Email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-                autoFocus
-              />
-              <TextField
-                variant="outlined"
-                margin="normal"
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-                value={Pass}
-                onChange={(e) => {
-                  setPass(e.target.value);
-                }}
-              /> */}
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
-              />
-              <Button
-                fullWidth
-                variant="contained"
-                color="primary"
-                className={classes.submit}
-                // onClick={() => {
-                //   firebase
-                //     .auth()
-                //     .signInWithEmailAndPassword(Email, Pass)
-                //     .then((userCredential) => {
-                //       // Signed in
-                //       var user = userCredential.user;
-                //       // ...
-                //     })
-                //     .catch((error) => {
-                //       var errorCode = error.code;
-                //       var errorMessage = error.message;
-                //       // ..
-                //     });
-                // }}
-              >
-                Sign In
-              </Button>
-            </form>
-          </div>
-        </>
-      ) : (
-        <></>
-      )}
-    </>
+    <div>
+      <Formik
+        initialValues={{
+          firstname: "",
+          lastname: "",
+          Email: "",
+        }}
+        onSubmit={async (values) => {
+          firebase
+            .firestore()
+            .collection("users")
+            .doc(uid)
+            .update({ ...values })
+            .then(console.log("Done", uid));
+        }}
+        validationSchema={validationSchema}
+      >
+        <Form>
+          <InputField
+            label="First Name"
+            name="firstname"
+            placeholder="First Name"
+          />
+
+          <InputField
+            label="Last Name"
+            name="lastname"
+            placeholder="Last Name"
+          />
+
+          <InputField
+            label="Email"
+            name="Email"
+            placeholder="jane@acme.com"
+            type="email"
+          />
+          <button type="submit">Update</button>
+        </Form>
+      </Formik>
+    </div>
   );
 }
+
 export default ProfilePage;

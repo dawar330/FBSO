@@ -11,7 +11,6 @@ import BasePage from "./BasePage";
 import firebase, { db } from "./firebase/config";
 import Layout from "./Pages/layout/Layout";
 import LoggedInLayout from "./Pages/layout/loggedInLayout";
-import SellerBasePage from "./SellerBasePage";
 
 export function Routes() {
   const [isAuth, setisAuth] = useState(false);

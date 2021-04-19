@@ -5,6 +5,7 @@ import { FormikStepper, FormikStep, InputField } from "formik-stepper";
 import MuiPhoneNumber from "material-ui-phone-number";
 import { MenuItem, Select } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
+import firebase, { storage } from "../../firebase/config";
 
 const validationSchema = Yup.object().shape({
   address1: Yup.string().required("Address field is required"),
@@ -12,27 +13,62 @@ const validationSchema = Yup.object().shape({
   email: Yup.string()
     .email("The email must be a valid email address.")
     .required("The Email field is required"),
-  password: Yup.string()
-    .required("The Password field is required")
-    .matches(
-      /^(?=.*[A-Za-z])(?=.*\d)(?=.*)[A-Za-z\d]{8,}$/,
-      `Must Contain 8 Characters, One Uppercase, One Lowercase,
-      One Number and one special case Character [@$!%*#?&-_]`
-    ),
-  privacy: Yup.boolean()
-    .isTrue()
-    .oneOf([true], "The terms and conditions must be accepted."),
+
+  city: Yup.string().required("City is required"),
+  state: Yup.string().required("State is required"),
+  zip: Yup.number().required("Address field is required"),
+  country: Yup.string().required("Country is required"),
+  propertytype: Yup.string().required("Property Type is required"),
+  year: Yup.number().required("Bulit Year is required"),
+  stories: Yup.number().required("No. of Stories is required"),
+  beds: Yup.number().required("No. of Beds is required"),
+  bath: Yup.number().required("No. of Baths is required"),
+  area: Yup.number().required("Total Area is required"),
+  lotsize: Yup.number().required("Lot Size is required"),
+  lotunit: Yup.number().required("Lot Unit is required"),
+  basement: Yup.number().required("Basement Size is required"),
+  hoafee: Yup.number().required("HOA fee is required"),
+  FirstName: Yup.string().required("First Name is required"),
+  LastName: Yup.string().required("Last Name is required"),
+  Description: Yup.string()
+    .required("Description is required")
+    .min(15, "Minimum of 15 Charaters"),
+  deedowner: Yup.string().required("Deed Owner is required"),
+  AskingPrice: Yup.number().required("Asking Price is required"),
 });
 
-function AddlistingPage() {
+function AddlistingPage(props) {
+  const uid = firebase.auth().currentUser.uid;
   const onSubmit = async (values, { setSubmitting }) => {
+    firebase
+      .firestore()
+      .collection("Listings")
+      .add({
+        ...values,
+        phoneNo: phone,
+        uid: uid,
+        Images: imageurls,
+      })
+      .then(props.setpage("listing"))
+      .catch(console.error());
     console.log(values);
     setSubmitting(false); //// Important
   };
   const [Images, setImages] = useState([]);
+  const [imageurls, setimageurls] = useState("");
   const [phone, setphone] = useState();
   function onChangeHandler(event) {
-    setImages(event.target.files);
+    setImages(event.target.files[0]);
+  }
+  function handleupload() {
+    let bucketName = "images";
+    let file = Images;
+    let storageref = firebase.storage().ref(`${bucketName}/${file.name}`);
+    let uploadtask = storageref.put(file);
+    uploadtask.on(firebase.storage.TaskEvent.STATE_CHANGED, () => {
+      let downladurl = uploadtask.getDownloadURL;
+      console.log(downladurl);
+    });
   }
   function handleOnChange(value) {
     setphone(value);
@@ -49,12 +85,28 @@ function AddlistingPage() {
         state: "",
         zip: "",
         country: "",
+        propertytype: "",
+        year: "",
+        stories: "",
+        beds: "",
+        bath: "",
+        area: "",
+        lotsize: "",
+        lotunit: "",
+        basement: "",
+        hoafee: "",
+        FirstName: "",
+        LastName: "",
+        email: "",
+        deedowner: "",
+        AskingPrice: "",
+        Description: "",
       }}
-      // validationSchema={validationSchema}
+      validationSchema={validationSchema}
       labelsColor="secondary" /// The text label color can be root variables or css => #fff
       withStepperLine /// false as default and If it is false, it hides stepper line
-      nextBtnLabel="step" /// Next as default
-      prevBtnLabel="return" /// Prev as default
+      nextBtnLabel="Next" /// Next as default
+      prevBtnLabel="Return" /// Prev as default
       submitBtnLabel="Done" /// Submit as default
       nextBtnColor="primary" /// as default and The color can be root variables or css => #fff
       prevBtnColor="danger" /// as default and The color can be root variables or css => #fff
@@ -133,6 +185,9 @@ function AddlistingPage() {
             />
           </Grid>
           <Grid item xs={12} sm={3}>
+            <InputField name="Description" label="Description" type="text" />
+          </Grid>
+          <Grid item xs={12} sm={3}>
             <InputField name="hoafee" label="HOA Fee" type="number" />
           </Grid>
         </Grid>
@@ -164,9 +219,10 @@ function AddlistingPage() {
           <Grid item xs={12} sm={3}>
             <InputField name="AskingPrice" label="Asking Price" type="Number" />
           </Grid>
-          <Grid item xs={12} sm={3}>
+          {/* <Grid item xs={12} sm={3}>
             <Select
               fullWidth
+              required={true}
               labelId="demo-simple-select-label"
               id="demo-simple-select"
             >
@@ -174,15 +230,17 @@ function AddlistingPage() {
               <MenuItem value={1}>Multiple Individuals</MenuItem>
               <MenuItem value={2}>A Corporation, LLC, or Trust</MenuItem>
             </Select>
-          </Grid>
+          </Grid> */}
           <Grid item xs={12} sm={3}>
             <input
               type="file"
               class="form-control"
               multiple
-              fullWidth
               onChange={onChangeHandler}
             />
+            <button type={"button"} onClick={handleupload}>
+              upload
+            </button>
           </Grid>
         </Grid>
       </FormikStep>
@@ -195,36 +253,6 @@ function AddlistingPage() {
         circleColor="danger" /// The color can be root variables or css => #fff
       >
         <Grid container spacing={3}>
-          <div className="pricing-page-header">
-            <img
-              className="fbsorectangle-45"
-              src="https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606c005ba1930fabf8ba64b6/img/fbsorectangle-45@2x.png"
-            />
-            <div className="fbsooverlap-group6-1">
-              <img
-                className="fbsorectangle-44"
-                src="https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606c005ba1930fabf8ba64b6/img/fbsorectangle-44@2x.png"
-              />
-              <img
-                className="vector-31"
-                src="https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606c005ba1930fabf8ba64b6/img/vector-31@1x.png"
-              />
-              <div className="fbsorectangle-46 border-1px-congress-blue"></div>
-              <div className="ready-to-list"> READY TO LIST?</div>
-            </div>
-            <h1 className="fbsotext-1">
-              Pakistan&#39;s Most Magnificent For Sale By Owner Platfom
-            </h1>
-            <div className="fbsotext-2 roboto-normal-black-24px">
-              Enjoy maximum exposure with plans starting. from pkr 5000/-
-            </div>
-          </div>
-          <div className="fbsotext-3">
-            Bring maximum exposure to YOUR&nbsp;&nbsp;Listing and Sell Fast.
-          </div>
-          <div className="fbsotext-4 roboto-normal-black-24px">
-            Plans designed with YOU in mind
-          </div>
           <div className="flex-row-1">
             <div className="fbsooverlap-group3 border-1px-acapulco">
               <div className="surname roboto-normal-white-20px">Best Value</div>

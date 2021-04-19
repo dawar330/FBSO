@@ -12,6 +12,9 @@ import blog3 from "./Pages/blogs/blogpages/blog3";
 import blog2 from "./Pages/blogs/blogpages/blog2";
 import ForSaleOwnerPage from "./Pages/fbsopage/ForSaleOwnerPage";
 import ForgotpassPage from "./Pages/Forgotpass/ForgotpassPage";
+import Buy from "./Pages/buypage/Buy";
+import ListingPage from "./Pages/ListingPage/ListingPage";
+import MakeOfferPage from "./Pages/MakeOfferPage";
 
 export default function BasePage() {
   // useEffect(() => {
@@ -29,11 +32,14 @@ export default function BasePage() {
 
         <Route path="/home" component={HomePage} />
         <Route path="/faqs" component={FaqsPage} />
+        <Route path="/buy" component={Buy} />
         <Route path="/fbso" component={ForSaleOwnerPage} />
         <Route path="/siginup" component={SignupPage} />
         <Route path="/forgotpass" component={ForgotpassPage} />
         <Route path="/signin" component={SigninPage} />
         <Route path="/faqs" component={FaqsPage} />
+        <Route exact path="/listing/:id" component={ListingPage} />
+        <Route exact path="/listing/:id/offer" component={MakeOfferPage} />
         <Route path="/Reviews" component={ReviewsPage} />
         <Route path="/pricing" component={pricingpage} />
         <Route exact path="/blogs/1" component={blog1} />
