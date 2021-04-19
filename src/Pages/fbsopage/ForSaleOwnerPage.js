@@ -137,7 +137,7 @@ function Forsalebyowner() {
                 src="https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606c005ba1930fabf8ba64b6/img/123-1@2x.png"
               />
               <div className="quick-listing">
-                <div className="quick-listing-1 mulish-bold-cape-cod-18px">
+                <div className="quick-listing-1 fbsomulish-bold-cape-cod-18px">
                   Quick Listing
                 </div>
                 <p className="fbsotext-15 mulish-normal-cape-cod-14px">
@@ -152,7 +152,7 @@ function Forsalebyowner() {
                 src="https://anima-uploads.s3.amazonaws.com/projects/604a2033eecdd47017b01a54/releases/606c005ba1930fabf8ba64b6/img/save-money-1@2x.png"
               />
               <div className="real-saving-wit-no-extra-costs">
-                <div className="fbsotext-13 mulish-bold-cape-cod-18px">
+                <div className="fbsotext-13 fbsomulish-bold-cape-cod-18px">
                   Real savings with no extra costs
                 </div>
                 <p className="fbsotext-14 mulish-normal-cape-cod-14px">
@@ -169,7 +169,7 @@ function Forsalebyowner() {
               />
               <div className="fbsooverlap-group6">
                 <div className="easy-seller-disclosures smart-layers-pointers ">
-                  <div className="fbsotext-9 mulish-bold-cape-cod-18px">
+                  <div className="fbsotext-9 fbsomulish-bold-cape-cod-18px">
                     Easy Seller Disclosures
                   </div>
                   <p className="fbsotext-10 mulish-normal-cape-cod-14px">
@@ -180,7 +180,7 @@ function Forsalebyowner() {
                   </p>
                 </div>
                 <div className="latest-cutting-edge-tech smart-layers-pointers ">
-                  <div className="fbsotext-11 mulish-bold-cape-cod-18px">
+                  <div className="fbsotext-11 fbsomulish-bold-cape-cod-18px">
                     Latest Cutting-Edge Tech
                   </div>
                   <p className="fbsotext-12 mulish-normal-cape-cod-14px">

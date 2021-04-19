@@ -38,38 +38,38 @@ const validationSchema = Yup.object().shape({
 });
 
 function AddlistingPage(props) {
+  const [urlss, seturlss] = useState([]);
   const uid = firebase.auth().currentUser.uid;
   const onSubmit = async (values, { setSubmitting }) => {
-    firebase
+    console.log(urlss);
+    await firebase
       .firestore()
       .collection("Listings")
       .add({
         ...values,
         phoneNo: phone,
         uid: uid,
-        Images: imageurls,
+        Images: urlss,
       })
       .then(props.setpage("listing"))
       .catch(console.error());
     console.log(values);
     setSubmitting(false); //// Important
   };
-  const [Images, setImages] = useState([]);
-  const [imageurls, setimageurls] = useState("");
+
   const [phone, setphone] = useState();
-  function onChangeHandler(event) {
-    setImages(event.target.files[0]);
-  }
-  function handleupload() {
-    let bucketName = "images";
-    let file = Images;
-    let storageref = firebase.storage().ref(`${bucketName}/${file.name}`);
-    let uploadtask = storageref.put(file);
-    uploadtask.on(firebase.storage.TaskEvent.STATE_CHANGED, () => {
-      let downladurl = uploadtask.getDownloadURL;
-      console.log(downladurl);
-    });
-  }
+
+  const handleChange = async (e) => {
+    var urls;
+    for (var i = 0; i < e.target.files.length; i++) {
+      var img = e.target.files[i];
+      const uploadtask = storage.ref(`images`).child(img.name);
+      await uploadtask.put(img);
+      const downloadUrl = await uploadtask.getDownloadURL();
+      console.log(downloadUrl);
+    }
+    seturlss(urls);
+  };
   function handleOnChange(value) {
     setphone(value);
   }
@@ -232,11 +232,8 @@ function AddlistingPage(props) {
               type="file"
               className="form-control"
               multiple
-              onChange={onChangeHandler}
+              onChange={handleChange}
             />
-            <button type={"button"} onClick={handleupload}>
-              upload
-            </button>
           </Grid>
         </Grid>
       </FormikStep>

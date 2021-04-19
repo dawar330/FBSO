@@ -61,7 +61,7 @@ function MediaCard(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="https://anima-uploads.s3.amazonaws.com/projects/6075501c2ab063fdc7dd207d/releases/6075502c2ab063fdc7dd207e/img/property-image@2x.png"
           title="ForSale"
         />
         <CardContent>

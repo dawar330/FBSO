@@ -16,7 +16,7 @@
   top: 1370px;
   width: 793px;
 }
-.blogsbasepage .flex-col {
+.blogsbasepage .blogflex-col {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -26,34 +26,34 @@
   top: 69px;
   width: 352px;
 }
-.blogsbasepage .flex-row {
+.blogsbasepage .blogflex-row {
   align-items: flex-start;
   display: flex;
   margin-left: 5px;
   margin-top: 12px;
   min-width: 312px;
 }
-.blogsbasepage .flex-row-1 {
+.blogsbasepage .blogflex-row-1 {
   align-items: flex-start;
   align-self: flex-end;
   display: flex;
   margin-top: 12px;
   min-width: 347px;
 }
-.blogsbasepage .flex-row-2 {
+.blogsbasepage .blogflex-row-2 {
   align-items: flex-start;
   display: flex;
   margin-top: 17px;
   min-width: 284px;
 }
-.blogsbasepage .flex-row-3 {
+.blogsbasepage .blogflex-row-3 {
   align-items: flex-start;
   display: flex;
   margin-left: 5px;
   margin-top: 12px;
   min-width: 266px;
 }
-.blogsbasepage .flex-row-4 {
+.blogsbasepage .blogflex-row-4 {
   align-items: flex-start;
   display: flex;
   height: 45px;

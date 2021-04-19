@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import AddlistingPage from "../addlistingpage/AddlistingPage";
 import "./loggedinstyle.css";
 import ProfilePage from "../ProfilePage";
+import { Button } from "bootstrap";
+import Offersumary from "../offersumary/Offersumary";
 
 function LoggedInLayout(props) {
   const uid = firebase.auth().currentUser.uid;
@@ -77,6 +79,12 @@ function LoggedInLayout(props) {
   const [page, setpage] = useState("listing");
   function rendersellerpage() {
     switch (page) {
+      case "offers":
+        return (
+          <>
+            <Offersumary />
+          </>
+        );
       case "listing":
         return (
           <>
@@ -100,7 +108,12 @@ function LoggedInLayout(props) {
             {listings &&
               listings.map((list) => {
                 return (
-                  <div className="loggeginoverlap-group border-1px-black">
+                  <div
+                    className="loggeginoverlap-group border-1px-black"
+                    onClick={() => {
+                      setpage("offers");
+                    }}
+                  >
                     <div className="loggeninflex-row-4">
                       <img className="property-image" src={propertyImage} />
                       <p className="loggedaddress loggedinvalign-loggedintext-middle roboto-bold-black-15px">
@@ -109,10 +122,18 @@ function LoggedInLayout(props) {
                         {list.address2}
                       </p>
 
-                      <img
-                        className="register-button-1"
-                        src={registerButton2}
-                      />
+                      <button
+                        className="register-button-1 btn btn-danger btn-block"
+                        onClick={() => {
+                          firebase
+                            .firestore()
+                            .collection("Listings")
+                            .doc(list.ID)
+                            .delete();
+                        }}
+                      >
+                        Delete
+                      </button>
                     </div>
                   </div>
                 );

@@ -43,12 +43,12 @@ export default function Blogbasepage(props) {
 
   return (
     <div className="blogsbasepage">
-      <div className="flex-col">
+      <div className="blogflex-col">
         <div className="how-to-videos valign-text-middle mulish-bold-black-25px">
           {howToVideos}
         </div>
         <VideoTag2>{videoTag2Props.children}</VideoTag2>
-        <div className="flex-row">
+        <div className="blogflex-row">
           <div className="rectangle-">
             <iframe
               style={{ border: 0 }}
@@ -69,7 +69,7 @@ export default function Blogbasepage(props) {
             {text6}
           </p>
         </div>
-        <div className="flex-row-1">
+        <div className="blogflex-row-1">
           <div className="rectangle-">
             <iframe
               style={{ border: 0 }}
@@ -90,7 +90,7 @@ export default function Blogbasepage(props) {
             {text5}
           </p>
         </div>
-        <div className="flex-row-3">
+        <div className="blogflex-row-3">
           <div className="rectangle-">
             <iframe
               style={{ border: 0 }}
@@ -114,14 +114,14 @@ export default function Blogbasepage(props) {
         <div className="recent-blogs valign-text-middle mulish-bold-black-25px">
           {recentBlogs}
         </div>
-        <div className="flex-row-2">
+        <div className="blogflex-row-2">
           <img className="rectangle-5" src={rectangle54} />
           <p className="text-1 valign-text-middle mulish-regular-normal-black-14px">
             {text1}
           </p>
         </div>
       </div>
-      <div className="flex-row-4">
+      <div className="blogflex-row-4">
         <img className="rectangle-5" src={rectangle55} />
         <p className="text-2 valign-text-middle mulish-regular-normal-black-14px">
           {text2}
